@@ -1,0 +1,6 @@
+- Notiere Einkäufe durch einen Wisch oder einen Tap auf dem Einkaufszettl.
+- Markiere Produkte durch einen Wisch oder einen Tap als „gekauft“.
+- Weise Produkten Einheiten, Kategorien und Mengen zu.
+- Erstelle eigene Produkte, Kategorien und Einheiten.
+- Sortiere Produkte geordnet nach Kategorien so, wie sie beispielsweise in Deinem Supermarkt zu finden sind.
+- Blende alle Produkte einer Kategorie aus

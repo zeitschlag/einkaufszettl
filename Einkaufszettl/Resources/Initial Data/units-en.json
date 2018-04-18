@@ -1,0 +1,82 @@
+[
+	{
+    "name": "Gramm",
+    "singular": "Gramm",
+    "plural": "Gramm"
+  },
+	{
+    "name": "Kilogramm",
+    "singular": "kilogramm",
+    "plural": "kilogramm"
+  },
+	{
+    "name": "Liter",
+    "singular": "liter",
+    "plural": "liter"
+  },
+	{
+    "name": "Milliliter",
+    "singular": "Milliliter",
+    "plural": "Milliliter"
+  },
+  {
+    "name": "Packages",
+    "singular": "package",
+    "plural": "packages"
+  },
+  {
+    "name": "Pieces",
+    "singular": "piece",
+    "plural": "pieces"
+  },
+  {
+    "name": "Cans",
+    "singular": "can",
+    "plural": "cans"
+  },
+  {
+    "name": "Bottles",
+    "singular": "bottle",
+    "plural": "bottles"
+  },
+  {
+    "name": "Jars",
+    "singular": "jar",
+    "plural": "jars"
+  },
+  {
+    "name": "Cups",
+    "singular": "cup",
+    "plural": "cups"
+  },
+  {
+    "name": "Pounds",
+    "singular": "pound",
+    "plural": "pounds"
+  },
+  {
+    "name": "Loafs",
+    "singular": "loaf",
+    "plural": "loafs"
+  },
+  {
+    "name": "Tubes",
+    "singular": "tube",
+    "plural": "tubes"
+  },
+  {
+    "name": "Bags",
+    "singular": "bag",
+    "plural": "bags"
+  },
+  {
+    "name": "Bunch",
+    "singular": "bunch",
+    "plural": "bunch"
+  },
+  {
+    "name": "Heads",
+    "singular": "head",
+    "plural": "heads"
+  }
+]

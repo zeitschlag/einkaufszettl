@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Tutorial",
+    "displayOrderValue": 0
+  },
+  {
+    "name" : "Fruits",
+    "displayOrderValue" : 1
+  },
+  {
+    "name" : "Vegetables",
+    "displayOrderValue" : 2
+  },
+  {
+    "name" : "Canned Food",
+    "displayOrderValue" : 3
+  },
+  {
+    "name" : "Herbs & Spices",
+    "displayOrderValue" : 4
+  },
+  {
+    "name" : "Convenience Food",
+    "displayOrderValue" : 5
+  },
+  {
+    "name" : "Garden Products",
+    "displayOrderValue" : 6
+  },
+  {
+    "name" : "Grains",
+    "displayOrderValue" : 7
+  },
+  {
+    "name" : "Spreads",
+    "displayOrderValue" : 8
+  },
+  {
+    "name" : "Muesli",
+    "displayOrderValue" : 9
+  },
+  {
+    "name" : "Pastries",
+    "displayOrderValue" : 10
+  },
+  {
+    "name" : "Pasta",
+    "displayOrderValue" : 11
+  },
+  {
+    "name" : "Sauces & Dressings",
+    "displayOrderValue" : 12
+  },
+  {
+    "name" : "Cold Cuts",
+    "displayOrderValue" : 13
+  },
+  {
+    "name" : "Meat",
+    "displayOrderValue" : 14
+  },
+  {
+    "name" : "Frozen Food",
+    "displayOrderValue" : 15
+  },
+  {
+    "name" : "Fish & Seafood",
+    "displayOrderValue" : 16
+  },
+  {
+    "name" : "Dairy Products",
+    "displayOrderValue" : 17
+  },
+  {
+    "name" : "Dairy Case",
+    "displayOrderValue" : 18
+  },
+  {
+    "name" : "Legumes",
+    "displayOrderValue" : 19
+  },
+  {
+    "name" : "Nuts",
+    "displayOrderValue" : 20
+  },
+  {
+    "name" : "Sweets",
+    "displayOrderValue" : 21
+  },
+  {
+    "name" : "Snacks",
+    "displayOrderValue" : 22
+  },
+  {
+    "name" : "Beverages",
+    "displayOrderValue" : 23
+  },
+  {
+    "name" : "Softdrinks",
+    "displayOrderValue" : 24
+  },
+  {
+    "name" : "Juice",
+    "displayOrderValue" : 25
+  },
+  {
+    "name" : "Alcoholic Beverages",
+    "displayOrderValue" : 26
+  },
+  {
+    "name" : "Drug Store",
+    "displayOrderValue" : 27
+  },
+  {
+    "name" : "Homewares",
+    "displayOrderValue" : 28
+  },
+  {
+    "name" : "Polish",
+    "displayOrderValue" : 29
+  },
+  {
+    "name" : "Pet food",
+    "displayOrderValue" : 30
+  }
+]

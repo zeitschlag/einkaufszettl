@@ -1,0 +1,794 @@
+[
+  {
+    "name": "tomatoes",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "cucumber",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "cheese",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "bread",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Loafs",
+    "category": "Pastries"
+  },
+  {
+    "name": "apples",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Fruits"
+  },
+  {
+    "name": "bananas",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Fruits"
+  },
+  {
+    "name": "rice",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gramm",
+    "category": "Grains"
+  },
+  {
+    "name": "pasta",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gramm",
+    "category": "Pasta"
+  },
+  {
+    "name": "water",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bottles",
+    "category": "Beverages"
+  },
+  {
+    "name": "apple juice",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Liter",
+    "category": "Juice"
+  },
+  {
+    "name": "orange juice",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Liter",
+    "category": "Juice"
+  },
+  {
+    "name": "milk",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Liter",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "mustard",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Jars",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "ketchup",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "feta",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "humus",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Jars",
+    "category": "Canned Food"
+  },
+  {
+    "name": "cream cheese",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "frozen pizza",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Frozen Food"
+  },
+  {
+    "name": "french fries",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Frozen Food"
+  },
+  {
+    "name": "mate",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bottles",
+    "category": "Beverages"
+  },
+  {
+    "name": "tea",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bags",
+    "category": "Beverages"
+  },
+  {
+    "name": "saltsticks",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Snacks"
+  },
+  {
+    "name": "yoghurt",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "cottage cheese",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "iceberg lettuce",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Heads",
+    "category": "Vegetables"
+  },
+  {
+    "name": "olive oil",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bottles",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "sunflower oil",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bottles",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "balsamic vinegar",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bottles",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "vinegar",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bottles",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "peach",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Fruits"
+  },
+  {
+    "name": "nectarine",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Fruits"
+  },
+  {
+    "name": "cherries",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fruits"
+  },
+  {
+    "name": "plums",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fruits"
+  },
+  {
+    "name": "mushrooms",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "eggplant",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "onions",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "roll",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Pastries"
+  },
+  {
+    "name": "flour",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Grains"
+  },
+  {
+    "name": "sugar",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Grains"
+  },
+  {
+    "name": "broccoli",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "chickpeas",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cans",
+    "category": "Legumes"
+  },
+  {
+    "name": "lettuce",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Heads",
+    "category": "Vegetables"
+  },
+  {
+    "name": "beans",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Legumes"
+  },
+  {
+    "name": "potatoes",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "sweet potatoes",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "basil",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "cress",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "parsley",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "mint",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "chives",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "thyme",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "oregano",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "dill",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bunch",
+    "category": "Herbs & Spices"
+  },
+  {
+    "name": "corncob",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "paprika",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "pointer pepper",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "leek",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "rucola",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "chicory",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "carrots",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "ginger",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gramm",
+    "category": "Vegetables"
+  },
+  {
+    "name": "beetroot",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Vegetables"
+  },
+  {
+    "name": "zucchini",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Vegetables"
+  },
+  {
+    "name": "garlic",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Vegetables"
+  },
+  {
+    "name": "peas",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Fruits"
+  },
+  {
+    "name": "grapes",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fruits"
+  },
+  {
+    "name": "oranges",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fruits"
+  },
+  {
+    "name": "lemons",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Fruits"
+  },
+  {
+    "name": "peanuts",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cans",
+    "category": "Nuts"
+  },
+  {
+    "name": "cashew",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cans",
+    "category": "Nuts"
+  },
+  {
+    "name": "pine nuts",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bags",
+    "category": "Nuts"
+  },
+  {
+    "name": "sunflower seeds",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bags",
+    "category": "Nuts"
+  },
+  {
+    "name": "almonds",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bags",
+    "category": "Nuts"
+  },
+  {
+    "name": "german ravioli",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Convenience Food"
+  },
+  {
+    "name": "rollmop",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Jars",
+    "category": "Fish & Seafood"
+  },
+  {
+    "name": "beef",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Meat"
+  },
+  {
+    "name": "pork",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Meat"
+  },
+  {
+    "name": "lamb",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Meat"
+  },
+  {
+    "name": "salami",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Cold Cuts"
+  },
+  {
+    "name": "eggs",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Dairy Case"
+  },
+  {
+    "name": "butter",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "margarine",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "cocoa",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Beverages"
+  },
+  {
+    "name": "regular quark",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "lowfat quark",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "creeme",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "cream",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "sour cream",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Cups",
+    "category": "Dairy Products"
+  },
+  {
+    "name": "baguette",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Pastries"
+  },
+  {
+    "name": "coffee powder",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Beverages"
+  },
+  {
+    "name": "instant coffee",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Jars",
+    "category": "Beverages"
+  },
+  {
+    "name": "cereal",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Muesli"
+  },
+  {
+    "name": "crunchy muesli",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Muesli"
+  },
+  {
+    "name": "cereal bar",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Sweets"
+  },
+  {
+    "name": "mayonnaise",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Jars",
+    "category": "Sauces & Dressings"
+  },
+  {
+    "name": "icecream",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packages",
+    "category": "Frozen Food"
+  },
+  {
+    "name": "1. Swipe me to the left",
+    "bought": 0,
+    "onList": 1,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Tutorial"
+  },
+  {
+    "name": "2. Swipe me to the right",
+    "bought": 0,
+    "onList": 1,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Tutorial"
+  },
+  {
+    "name": "3. Tap on the i in the circle",
+    "bought": 0,
+    "onList": 1,
+    "amount": 0,
+    "unit": "Pieces",
+    "category": "Tutorial"
+  }
+]

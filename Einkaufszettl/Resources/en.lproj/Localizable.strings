@@ -1,0 +1,94 @@
+/* 
+  Localizable.strings
+  Einkaufszettl
+
+  Created by Nathan Mattes on 21.07.15.
+  Copyright (c) 2015 Nathan Mattes. All rights reserved.
+*/
+
+"GENERAL.YES"       = "Yes";
+"GENERAL.NO"        = "No";
+"GENERAL.OK"        = "OK";
+"GENERAL.CANCEL"    = "Cancel";
+
+"GENERAL.REMOVE"    = "Remove";
+
+"need to buy" = "You haven't bought this yet";
+"bought already" = "You have already bought this";
+"PRODUCT_LIST.ADD" = "I need this!";
+"PRODUCT_LIST.REMOVE" = "I don't need that";
+"delete" = "Delete";
+
+//MARK: - Shopping List
+"shopping.finished.title"           = "🎉🎊🎆🍻";
+"shopping.finished.message"         = "You have what you wanted. Now enjoy your life!";
+"shopping.finished.action.title"    = "Alright!";
+
+"SHOPPING_LIST.REMOVE.ALL"          = "Remove everything from list";
+"SHOPPING_LIST.REMOVE.MARKED_ONLY"  = "Remove bought products only";
+
+"SHOPPING_LIST.BOUGHT" = "Bought!";
+"SHOPPING_LIST.BUY_AGAIN" = "Buy again!";
+
+"SHOPPING_LIST.REMOVE_FROM_LIST" = "Remove from List";
+
+"SHOPPING_LIST.SETTINGS.TITLE.ACCESSIBILITY.LABEL"      = "Settings";
+"SHOPPING_LIST.SETTINGS.TITLE.ACCESSIBILITY.HINT"      = "Opens the In-App-Settings, where you can order the categories, for example.";
+
+//MARK: - Sharing
+"SHARING.PREFIX"                    = "Can you buy the following things, when you do the shopping, please?\n";
+"SHARING.SUFFIX"                    = "\n\nThank you very much!";
+
+/* Details */
+"basic information" = "Basic Information";
+"quantities" = "Measurement";
+"name" = "Name";
+"unit" = "Unit";
+"category" = "Category";
+"no_category" = "(No Category)";
+"amount" = "Amount";
+"no_unit" = "(No Unit)";
+"search thing placeholder" = "Search/Create Item";
+
+"REMOVE.%@.IRREVOCABLY" = "Remove %@ irrevocably?";
+
+//MARK: - Product List
+"PRODUCT_LIST.TITLE"    = "Add new products";
+
+//MARK: - Units
+"UNITS.TITLE" = "Choose a unit";
+
+"no_name" = "(No Name)";
+"SELECT.THIS_UNIT" = "Select";
+"search unit placeholder" = "Search/Create Unit";
+"units.title" = "All units";
+
+/* Unit Details */
+"unit.details.name.header" = "Name";
+
+//MARK: - Categories
+"CATEGORIES.TITLE" = "Choose a category";
+
+"no_name" = "(No Name)";
+"SELECT.THIS_CATEGORY" = "Select";
+"search category placeholder" = "Search/Create Category";
+"categories.title" = "All units";
+
+/* Category Details */
+"categories.details.name.header"    = "Name";
+
+// Settings
+"SETTINGS.TITLE"                    = "Settings";
+"SETTINGS.LICENSES.TITLE"           = "Licenses";
+"SETTINGS.HIDE_CATEGORIES.TITLE"    = "Hide Categories";
+"SETTINGS.CATEGORY_DISPLAY_ORDER"   = "Display Order of Catgories";
+"SETTINGS.HIDE_CATEGORIES"          = "Hide Categories";
+"SETTINGS.LICENSES"                 = "Licenses";
+"SETTINGS.GESTURE"                  = "Gesture";
+
+"SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
+
+"SETTINGS.CATEGORY_DISPLAY_ORDER.TITLE" = "Display Order";
+"SETTINGS.LICENCE.TEXT.PREFIX" = "This App uses the following libraries and assets:";
+
+"DISPLAY_ORDER_BUG_MESSAGE" = "Due to a bug in the app I had to reorder the categories. I'm really sorry for that. Please check, if your categories are in the correct orders";

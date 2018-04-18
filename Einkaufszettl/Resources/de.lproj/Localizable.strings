@@ -1,0 +1,99 @@
+/* 
+  Localizable.strings
+  Einkaufszettl
+
+  Created by Nathan Mattes on 21.07.15.
+  Copyright (c) 2015 Nathan Mattes. All rights reserved.
+*/
+
+"GENERAL.YES"       = "Ja";
+"GENERAL.NO"        = "Nein";
+"GENERAL.OK"        = "OK";
+"GENERAL.CANCEL"    = "Abbrechen";
+
+"GENERAL.REMOVE"    = "Löschen";
+
+"need to buy" = "Fehlt Dir noch";
+"bought already" = "Hast Du schon";
+"PRODUCT_LIST.ADD" = "Brauche ich";
+"PRODUCT_LIST.REMOVE" = "Brauche ich nicht";
+"delete" = "Löschen";
+
+//MARK: - Shopping List
+"shopping.finished.title"           = "🎉🎊🎆🍻";
+"shopping.finished.message"         = "Du hast dieses Mal alles eingekauft. Jetzt genieß das Leben!";
+"shopping.finished.action.title"    = "Alles klar!";
+
+"SHOPPING_LIST.REMOVE.ALL"          = "Alle entfernen";
+"SHOPPING_LIST.REMOVE.MARKED_ONLY"  = "Nur gekaufte Produkte entfernen";
+
+"SHOPPING_LIST.BOUGHT" = "Gekauft!";
+"SHOPPING_LIST.BUY_AGAIN" = "Nochmal kaufen";
+
+"SHOPPING_LIST.REMOVE_FROM_LIST" = "Doch nicht";
+
+"SHOPPING_LIST.SETTINGS.TITLE.ACCESSIBILITY.LABEL"      = "Einstellungen";
+"SHOPPING_LIST.SETTINGS.TITLE.ACCESSIBILITY.HINT"      = "Öffnet die Einstellung, wo Du beispielsweise die Reihenfolge der Kategorien ändern kannst.";
+
+//MARK: - Sharing
+"SHARING.PREFIX"                     = "Kannst Du bitte noch folgendes mitbringen, wenn Du einkaufen gehst?\n";
+"SHARING.SUFFIX"                    = "\n\nVielen Dank!";
+
+/* Details */
+"basic information" = "Grundlegende Informationen";
+"quantities" = "Mengenangaben";
+"name" = "Name";
+"unit" = "Einheit";
+"category" = "Abteilung";
+"no_category" = "(Ohne Abteilung)";
+"amount" = "Menge";
+"no_unit" = "(Keine Einheit)";
+"search thing placeholder" = "Sache suchen/erstellen";
+
+"REMOVE.%@.IRREVOCABLY" = "%@ unwiderruflich löschen?";
+
+//MARK: - Product List
+"PRODUCT_LIST.TITLE"    = "Produkte hinzufügen";
+
+//MARK: - Units
+"UNITS.TITLE" = "Einheit auswählen";
+
+"no_name" = "(Kein Name)";
+"SELECT.THIS_UNIT" = "Auswählen";
+"search unit placeholder" = "Einheit suchen/erstellen";
+"units.title" = "Alle Einheiten";
+
+/* Unit Details */
+"unit.details.name.header" = "Name";
+
+//MARK: - Categories
+"CATEGORIES.TITLE" = "Abteilung auswählen";
+
+"no_name" = "(Kein Name)";
+"SELECT.THIS_CATEGORY" = "Auswählen";
+"search category placeholder" = "Abteilung suchen/erstellen";
+"categories.title" = "Alle Abteilungen";
+
+/* Category Details */
+"categories.details.name.header"    = "Name";
+
+//MARK: - Settings
+"SETTINGS.TITLE"                    = "Einstellungen";
+"SETTINGS.LICENSES.TITLE"           = "Lizenzen";
+"SETTINGS.HIDE_CATEGORIES.TITLE"    = "Kategorien ausblenden";
+"SETTINGS.CATEGORY_DISPLAY_ORDER"   = "Reihenfolge der Kategorien";
+"SETTINGS.HIDE_CATEGORIES"          = "Kategorien ausblenden";
+"SETTINGS.LICENSES"                 = "Lizenzen";
+"SETTINGS.GESTURE"                  = "Bedienungsgeste";
+
+"SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
+
+"SETTINGS.CATEGORY_DISPLAY_ORDER.TITLE" = "Reihenfolge";
+
+"SETTINGS.LICENCE.TEXT.PREFIX" = "Diese App nutzt die folgenden Bibliotheken und Assets:";
+
+"DISPLAY_ORDER_BUG_MESSAGE" = "Aufgrund eines Fehlers in der App konnte es passieren, dass die Reihenfolge der Produktkategorien nicht richtig funktioniert hat, wenn du eigene Kategorien hinzugefügt hast. Dafür möchte ich mich entschuldigen. Um den Fehler zu beheben, musste ich die Kategorien neu anordnen. Bitte wirf doch bei Gelegenheit mal einen Blick in die Einstellungen und überprüfe, ob die Kategorien noch in der richtigen Reihenfolge sind. Nochmal: Sorry und Danke, dass du den Einkaufszettl nutzt.";
+
+
+
+

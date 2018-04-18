@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Tutorial",
+    "displayOrderValue": 0
+  },
+  {
+    "name" : "Obst",
+    "displayOrderValue" : 1
+  },
+  {
+    "name" : "Gemüse",
+    "displayOrderValue" : 2
+  },
+  {
+    "name" : "Konserven",
+    "displayOrderValue" : 3
+  },
+  {
+    "name" : "Kräuter & Gewürze",
+    "displayOrderValue" : 4
+  },
+  {
+    "name" : "Fertiggerichte",
+    "displayOrderValue" : 5
+  },
+  {
+    "name" : "Garten",
+    "displayOrderValue" : 6
+  },
+  {
+    "name" : "Getreide",
+    "displayOrderValue" : 7
+  },
+  {
+    "name" : "Brotaufstriche",
+    "displayOrderValue" : 8
+  },
+  {
+    "name" : "Müsli",
+    "displayOrderValue" : 9
+  },
+  {
+    "name" : "Backwaren",
+    "displayOrderValue" : 10
+  },
+  {
+    "name" : "Nudeln",
+    "displayOrderValue" : 11
+  },
+  {
+    "name" : "Saucen & Dressings",
+    "displayOrderValue" : 12
+  },
+  {
+    "name" : "Wurst & Aufschnitt",
+    "displayOrderValue" : 13
+  },
+  {
+    "name" : "Fleisch",
+    "displayOrderValue" : 14
+  },
+  {
+    "name" : "Tiefkühlware",
+    "displayOrderValue" : 15
+  },
+  {
+    "name" : "Fisch & Meeresfrüchte",
+    "displayOrderValue" : 16
+  },
+  {
+    "name" : "Milchprodukte",
+    "displayOrderValue" : 17
+  },
+  {
+    "name" : "Kühlregal",
+    "displayOrderValue" : 18
+  },
+  {
+    "name" : "Hülsenfrüchte",
+    "displayOrderValue" : 19
+  },
+  {
+    "name" : "Nüsse & Kerne",
+    "displayOrderValue" : 20
+  },
+  {
+    "name" : "Süßwaren",
+    "displayOrderValue" : 21
+  },
+  {
+    "name" : "Snacks",
+    "displayOrderValue" : 22
+  },
+  {
+    "name" : "Getränke",
+    "displayOrderValue" : 23
+  },
+  {
+    "name" : "Softdrinks",
+    "displayOrderValue" : 24
+  },
+  {
+    "name" : "Saft",
+    "displayOrderValue" : 25
+  },
+  {
+    "name" : "Alkoholische Getränke",
+    "displayOrderValue" : 26
+  },
+  {
+    "name" : "Drogerie",
+    "displayOrderValue" : 27
+  },
+  {
+    "name" : "Haushaltsartikel",
+    "displayOrderValue" : 28
+  },
+  {
+    "name" : "Putzen & Reinigen",
+    "displayOrderValue" : 29
+  },
+  {
+    "name" : "Tiernahrung",
+    "displayOrderValue" : 30
+  }
+]

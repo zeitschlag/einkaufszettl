@@ -1,0 +1,82 @@
+[
+	{
+    "name": "Gramm",
+    "singular": "Gramm",
+    "plural": "Gramm"
+  },
+	{
+    "name": "Kilogramm",
+    "singular": "Kilogramm",
+    "plural": "Kilogramm"
+  },
+	{
+    "name": "Liter",
+    "singular": "Liter",
+    "plural": "Liter"
+  },
+	{
+    "name": "Milliliter",
+    "singular": "Milliliter",
+    "plural": "Milliliter"
+  },
+  {
+    "name": "Packungen",
+    "singular": "Packung",
+    "plural": "Packungen",
+  },
+  {
+    "name": "Stück",
+    "singular": "Stück",
+    "plural": "Stück"
+  },
+  {
+    "name": "Dosen",
+    "singular": "Dose",
+    "plural": "Dosen"
+  },
+  {
+    "name": "Flaschen",
+    "singular": "Flasche",
+    "plural": "Flaschen"
+  },
+  {
+    "name": "Gläser",
+    "singular": "Glas",
+    "plural": "Gläser"
+  },
+  {
+    "name": "Becher",
+    "singular": "Becher",
+    "plural": "Becher"
+  },
+  {
+    "name": "Pfund",
+    "singular": "Pfund",
+    "plural": "Pfund"
+  },
+  {
+    "name": "Laibe",
+    "singular": "Laib",
+    "plural": "Laibe"
+  },
+  {
+    "name": "Tuben",
+    "singular": "Tube",
+    "plural": "Tuben"
+  },
+  {
+    "name": "Beutel",
+    "singular": "Beutel",
+    "plural": "Beutel"
+  },
+  {
+    "name": "Bund",
+    "singular": "Bund",
+    "plural": "Bund"
+  },
+  {
+    "name": "Köpfe",
+    "singular": "Kopf",
+    "plural": "Köpfe"
+  }
+]

@@ -1,0 +1,134 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.59.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    
+    version_number = '0.6'
+    build_number = number_of_commits
+
+    info_plist_path = './Einkaufszettl/Resources/Supporting Files/Info.plist'
+
+    set_info_plist_value(
+      path: info_plist_path,
+      key: 'CFBundleVersion',
+      value: "#{build_number}"
+    )
+
+    set_info_plist_value(
+      path: info_plist_path,
+      key: 'CFBundleShortVersionString',
+      value: "#{version_number}"
+    )
+
+    gym(scheme: "Einkaufszettl") # Build your app - more options available
+    
+    git_commit(
+      path: ["#{info_plist_path}"],
+      message: "Version bump to #{version_number} (#{build_number}) by CI Builder"
+    )
+    
+    add_git_tag(
+      tag: "beta/v#{version_number}_#{build_number}"
+    )
+
+    testflight
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    
+    version_number = '0.6'
+    
+    build_number = number_of_commits
+
+    info_plist_path = './Einkaufszettl/Resources/Supporting Files/Info.plist'
+
+    set_info_plist_value(
+      path: info_plist_path,
+      key: 'CFBundleVersion',
+      value: "#{build_number}"
+    )
+
+    set_info_plist_value(
+      path: info_plist_path,
+      key: 'CFBundleShortVersionString',
+      value: "#{version_number}"
+    )
+    
+    gym(
+      scheme: "Einkaufszettl",
+      include_bitcode: true
+    ) # Build your app - more options available
+    
+    git_commit(
+      path: ["#{info_plist_path}"],
+      message: "Version bump to #{version_number} (#{build_number}) by CI Builder"
+    )
+    
+    add_git_tag(
+      tag: "release/v#{version_number}_#{build_number}"
+    )
+    
+    deliver(
+      force: true, 
+      metadata_path: './fastlane/metadata'
+    )
+    # frameit
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

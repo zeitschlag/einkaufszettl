@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Thing" representedClassName="Thing" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bought" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="onList" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ThingCategory" inverseName="things" inverseEntity="ThingCategory" syncable="YES"/>
+        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Unit" inverseName="thing" inverseEntity="Unit" syncable="YES"/>
+    </entity>
+    <entity name="ThingCategory" representedClassName="ThingCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="things" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Thing" inverseName="category" inverseEntity="Thing" syncable="YES"/>
+    </entity>
+    <entity name="Unit" representedClassName="Unit" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plural" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="singular" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="thing" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Thing" inverseName="unit" inverseEntity="Thing" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Thing" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ThingCategory" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Unit" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

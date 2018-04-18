@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Thing" representedClassName="Thing" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bought" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="onList" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Unit" inverseName="thing" inverseEntity="Unit" syncable="YES"/>
+    </entity>
+    <entity name="Unit" representedClassName="Unit" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plural" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="singular" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="thing" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Thing" inverseName="unit" inverseEntity="Thing" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Thing" positionX="9" positionY="-63" width="128" height="120"/>
+        <element name="Unit" positionX="9" positionY="-36" width="128" height="105"/>
+    </elements>
+</model>

@@ -1,0 +1,810 @@
+[
+  {
+    "name": "1. Wische nach links",
+    "bought": 0,
+    "onList": 1,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Tutorial"
+  },
+  {
+    "name": "2. Wische nach rechts",
+    "bought": 0,
+    "onList": 1,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Tutorial"
+  },
+  {
+    "name": "3. Drücke auf das i im Kreis",
+    "bought": 0,
+    "onList": 1,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Tutorial"
+  },
+  {
+    "name": "Tomaten",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Gurken",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Käse",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Brot",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Laibe",
+    "category": "Backwaren"
+  },
+  {
+    "name": "Äpfel",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Obst"
+  },
+  {
+    "name": "Bananen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Obst"
+  },
+  {
+    "name": "Reis",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gramm",
+    "category": "Getreide"
+  },
+  {
+    "name": "Nudeln",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gramm",
+    "category": "Nudeln"
+  },
+  {
+    "name": "Wasser",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Flaschen",
+    "category": "Getränke"
+  },
+  {
+    "name": "Apfelsaft",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Liter",
+    "category": "Saft"
+  },
+  {
+    "name": "Orangensaft",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Liter",
+    "category": "Saft"
+  },
+  {
+    "name": "Milch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Liter",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Senf",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gläser",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Ketchup",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Feta",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Humus",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gläser",
+    "category": "Konserven"
+  },
+  {
+    "name": "Frischkäse",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Tiefkühlpizza",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Tiefkühlware"
+  },
+  {
+    "name": "Pommes",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Tiefkühlware"
+  },
+  {
+    "name": "Schnitzel",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Fleisch"
+  },
+  {
+    "name": "Mate",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Flaschen",
+    "category": "Getränke"
+  },
+  {
+    "name": "Tee",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Beutel",
+    "category": "Getränke"
+  },
+  {
+    "name": "Salzstangen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Snacks"
+  },
+  {
+    "name": "Joghurt",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Körniger Frischkäse",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Eisbergsalat",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Köpfe",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Olivenöl",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Flaschen",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Sonnenblumenöl",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Flaschen",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Roter Balsamico",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Flaschen",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Weisser Balsamico",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Flaschen",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Pfirsiche",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Obst"
+  },
+  {
+    "name": "Nektarinen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Obst"
+  },
+  {
+    "name": "Kirschen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Obst"
+  },
+  {
+    "name": "Pflaumen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Obst"
+  },
+  {
+    "name": "Zwetschgen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Obst"
+  },
+  {
+    "name": "Champignons",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Auberginen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Zwiebeln",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Brötchen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Backwaren"
+  },
+  {
+    "name": "Mehl",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Getreide"
+  },
+  {
+    "name": "Zucker",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Getreide"
+  },
+  {
+    "name": "Broccoli",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Kichererbsen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Dosen",
+    "category": "Hülsenfrüchte"
+  },
+  {
+    "name": "Blattsalat",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Köpfe",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Bohnen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Hülsenfrüchte"
+  },
+  {
+    "name": "Kartoffeln",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Süßkartoffeln",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Basilikum",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Kresse",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Petersilie",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Minze",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Schnittlauch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Thymian",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Oregano",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Dill",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Bund",
+    "category": "Kräuter & Gewürze"
+  },
+  {
+    "name": "Maiskolben",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Paprika",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Spitzpaprika",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Lauch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Rucola",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Chicoree",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Karotten",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Ingwer",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gramm",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Rote Bete",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Zucchini",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Knoblauch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Gemüse"
+  },
+  {
+    "name": "Birnen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Obst"
+  },
+  {
+    "name": "Trauben",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Obst"
+  },
+  {
+    "name": "Orangen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Obst"
+  },
+  {
+    "name": "Zitronen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Obst"
+  },
+  {
+    "name": "Erdnüsse",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Dosen",
+    "category": "Nüsse & Kerne"
+  },
+  {
+    "name": "Cashewkerne",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Dosen",
+    "category": "Nüsse & Kerne"
+  },
+  {
+    "name": "Pinienkerne",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Beutel",
+    "category": "Nüsse & Kerne"
+  },
+  {
+    "name": "Sonnenblumenkerne",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Beutel",
+    "category": "Nüsse & Kerne"
+  },
+  {
+    "name": "Mandeln",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Beutel",
+    "category": "Nüsse & Kerne"
+  },
+  {
+    "name": "Maultaschen",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Fertiggerichte"
+  },
+  {
+    "name": "Rollmops",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gläser",
+    "category": "Fisch & Meeresfrüchte"
+  },
+  {
+    "name": "Rindfleisch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fleisch"
+  },
+  {
+    "name": "Schweinefleisch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fleisch"
+  },
+  {
+    "name": "Lammfleisch",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Fleisch"
+  },
+  {
+    "name": "Salami",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Wurst & Aufschnitt"
+  },
+  {
+    "name": "Eier",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Kühlregal"
+  },
+  {
+    "name": "Butter",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Margarine",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Kakao",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Getränke"
+  },
+  {
+    "name": "Speisequark",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Magerquark",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Sahne",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Schmand",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Saure Sahne",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Becher",
+    "category": "Milchprodukte"
+  },
+  {
+    "name": "Baguette",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Stück",
+    "category": "Backwaren"
+  },
+  {
+    "name": "Kaffeepulver",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Kilogramm",
+    "category": "Getränke"
+  },
+  {
+    "name": "Instantkaffee",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gläser",
+    "category": "Getränke"
+  },
+  {
+    "name": "Müsli",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Müsli"
+  },
+  {
+    "name": "Knuspermüsli",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Müsli"
+  },
+  {
+    "name": "Müsliriegel",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Süßwaren"
+  },
+  {
+    "name": "Mayonnaise",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Gläser",
+    "category": "Saucen & Dressings"
+  },
+  {
+    "name": "Eis",
+    "bought": 0,
+    "onList": 0,
+    "amount": 0,
+    "unit": "Packungen",
+    "category": "Tiefkühlware"
+  }
+]
