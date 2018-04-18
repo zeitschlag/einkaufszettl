@@ -9,6 +9,7 @@
 import UIKit
 
 class Branding: NSObject {
+    @objc
     static let shared = Branding()
     
     //MARK: - Colors
@@ -17,6 +18,7 @@ class Branding: NSObject {
     private let gray = UIColor.gray
     private let black = UIColor.black
     
+    @objc
     func actionColor() -> UIColor {
         return self.redColor
     }
@@ -39,14 +41,16 @@ class Branding: NSObject {
     
     // MARK: - Fonts
     
-    private let defaultBoldFont = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightBold)
-    private let defaultRegularFont = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightRegular)
-    private let defaultLightFont = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightLight)
+    private let defaultBoldFont = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.bold)
+    private let defaultRegularFont = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.regular)
+    private let defaultLightFont = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.light)
     
+    @objc
     func selectedItemFont() -> UIFont {
         return defaultBoldFont
     }
     
+    @objc
     func unselectedItemFont() -> UIFont {
         return defaultLightFont
     }

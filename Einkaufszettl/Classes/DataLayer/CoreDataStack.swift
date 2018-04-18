@@ -10,8 +10,10 @@ import UIKit
 
 class CoreDataStack: NSObject {
     
+    @objc
     static let shared = CoreDataStack()
     
+    @objc
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -54,6 +56,7 @@ class CoreDataStack: NSObject {
     
     // MARK: - Core Data Saving support
     
+    @objc
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {

@@ -8,13 +8,14 @@
 
 import UIKit
 
-@objc protocol EZLButtonTableViewCellDelegate {
+@objc
+protocol EZLButtonTableViewCellDelegate {
     func buttonTapped(sender: Any)
 }
 
 class EZLButtonTableViewCell: UITableViewCell {
     
-    var delegate: EZLButtonTableViewCellDelegate?
+    @objc weak var delegate: EZLButtonTableViewCellDelegate?
     @IBOutlet weak var button: UIButton!
     
     @IBAction func buttonTapped(_ sender: Any) {

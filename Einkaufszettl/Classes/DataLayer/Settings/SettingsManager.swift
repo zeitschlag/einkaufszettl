@@ -8,7 +8,8 @@
 
 import Foundation
 
-@objc enum SelectionMode: Int {
+@objc
+enum SelectionMode: Int {
     case Tap = 1
     case Swipe = 2
     
@@ -27,12 +28,14 @@ import Foundation
 
 class SettingsManager: NSObject {
     
+    @objc
     static let shared = SettingsManager()
     
     //MARK: - Selection
     
     private let selectionModeSettingsKey = "kSelectionModeSettingsKey"
     
+    @objc
     func currentSelectionMode() -> SelectionMode {
         
         let selectionModeInt = UserDefaults.standard.integer(forKey: self.selectionModeSettingsKey)

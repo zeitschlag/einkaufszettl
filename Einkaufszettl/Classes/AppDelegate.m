@@ -22,9 +22,7 @@
     launcher.managedObjectContext = [CoreDataStack shared].persistentContainer.viewContext;
     [launcher readInitialData];
     [launcher migrateCategories];
-    
-    NSString *kAskedUserForNotification = @"kAskedUserForNotification";
-    
+        
     if ([[NSUserDefaults standardUserDefaults] boolForKey:kAskedUserForNotification] == NO) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kAskedUserForNotification];
         
@@ -36,7 +34,7 @@
 
     }
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(NumberOfBoughtThingsChanged:) name:kNumberOfBoughtThingsChangedNotificationName object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(numberOfBoughtThingsChanged:) name:kNumberOfBoughtThingsChangedNotificationName object:nil];
 
     return YES;
 }
@@ -70,7 +68,7 @@
 
 #pragma mark - Notifications
 
-- (void)NumberOfBoughtThingsChanged:(NSNotification *)notification {
+- (void)numberOfBoughtThingsChanged:(NSNotification *)notification {
     
     [[UNUserNotificationCenter currentNotificationCenter] getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
         if (settings.badgeSetting == UNNotificationSettingEnabled) {

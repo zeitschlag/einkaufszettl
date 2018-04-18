@@ -152,7 +152,7 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
     
     //MARK: - Notifications
     
-    func categoryOrderChanged(_ notification: Notification) {
+    @objc func categoryOrderChanged(_ notification: Notification) {
         do {
             try self.resultsController?.performFetch()
             self.tableView.reloadData()

@@ -15,7 +15,7 @@ class EZLCategoryDetailDataSource: NSObject {
     var managedObjectContext: NSManagedObjectContext
     var buttonCellDelegate: EZLButtonTableViewCellDelegate
     
-    init(category: ProductCategory, managedObjectContext: NSManagedObjectContext, buttonCellDelegate: EZLButtonTableViewCellDelegate) {
+    @objc init(category: ProductCategory, managedObjectContext: NSManagedObjectContext, buttonCellDelegate: EZLButtonTableViewCellDelegate) {
         self.category = category
         self.managedObjectContext = managedObjectContext
         self.buttonCellDelegate = buttonCellDelegate

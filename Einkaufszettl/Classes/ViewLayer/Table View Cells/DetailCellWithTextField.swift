@@ -13,7 +13,7 @@ class DetailCellWithTextField : UITableViewCell {
     @IBOutlet weak var detailTitleLabel: UILabel!
     @IBOutlet weak var detailTextField: UITextField!
     var isNumeric = false
-    var isDecimalNumeric = false
+    @objc var isDecimalNumeric = false
     
 }
 
@@ -65,10 +65,10 @@ extension DetailCellWithTextField : UITextFieldDelegate {
                     return false
                 }
                 
-                if fullText.characters.count == 2 &&
-                    fullText.characters.first == "0" &&
+                if fullText.count == 2 &&
+                    fullText.first == "0" &&
                     fullText != "0" {
-                    let index = fullText.characters.index(fullText.startIndex, offsetBy: 1)
+                    let index = fullText.index(fullText.startIndex, offsetBy: 1)
                     let substring = fullText[index]
                     if String(substring) != seperator {
                         textField.text = "\(substring)"

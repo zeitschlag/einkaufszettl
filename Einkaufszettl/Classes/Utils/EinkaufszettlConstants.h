@@ -11,6 +11,8 @@
 
 #pragma mark - UserDefault-keys
 
+static NSString * const kAskedUserForNotification = @"kAskedUserForNotification";
+
 static NSString * const kMaxOrderValueKey = @"MaxOrderValue";
 static NSString * const kMigrationDoneKey = @"MigrationDone";
 static NSString * const kHasLaunchedOnceKey = @"HasLaunchedOnce";

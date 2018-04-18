@@ -12,7 +12,7 @@ import CoreData
 @objc(Product)
 public class Product: NSManagedObject {
 
-    var categoryName : String {
+    @objc var categoryName : String {
         get {
             guard let category = self.category else {
                 return NSLocalizedString("no_category", comment: "This text appears in SectionTitle, if there's no category")

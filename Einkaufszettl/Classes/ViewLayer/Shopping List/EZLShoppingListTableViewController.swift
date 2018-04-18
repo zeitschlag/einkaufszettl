@@ -241,15 +241,15 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         
         if productBought == true {
             textLabelText = NSAttributedString(string: productName, attributes: [
-                NSStrikethroughStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue,
-                NSStrikethroughColorAttributeName: branding.strikeThroughColor(),
-                NSForegroundColorAttributeName: branding.productBoughtTextColor(),
-                NSFontAttributeName: UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightLight)
+                NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue,
+                NSAttributedStringKey.strikethroughColor: branding.strikeThroughColor(),
+                NSAttributedStringKey.foregroundColor: branding.productBoughtTextColor(),
+                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.light)
                 ])
         } else {
             textLabelText = NSAttributedString(string: productName, attributes: [
-                NSForegroundColorAttributeName: branding.productNotBoughtTextColor(),
-                NSFontAttributeName: UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightRegular)
+                NSAttributedStringKey.foregroundColor: branding.productNotBoughtTextColor(),
+                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.regular)
                 ])
         }
         
@@ -386,7 +386,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
     
     //MARK: - Notifications
     
-    func showSuccessMessage(_ notification: Notification) {
+    @objc func showSuccessMessage(_ notification: Notification) {
         
         let title = NSLocalizedString("shopping.finished.title", comment: "")
         let message = NSLocalizedString("shopping.finished.message", comment: "Message for success-popup, if shopping is done")
@@ -399,7 +399,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         self.present(alert, animated: true, completion: nil)
     }
     
-    func categoryOrderChanged(_ notification: Notification) {
+    @objc func categoryOrderChanged(_ notification: Notification) {
         
         guard let resultsController = self.resultsController else {
             NSLog("No ResultsController!")
@@ -414,7 +414,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         }
     }
     
-    func numberOfBoughtThingsChanged(_ notification: Notification) {
+    @objc func numberOfBoughtThingsChanged(_ notification: Notification) {
         self.updateTrashBinButtonVisibility()
         self.updateSharingButtonVisibility()
     }

@@ -11,9 +11,9 @@ import CoreData
 
 class EZLUnitDetailTableViewController: UITableViewController {
     
-    var unit: ProductUnit?
+    @objc var unit: ProductUnit?
     var dataSource: EZLUnitDetailDataSource?
-    var managedObjectContext: NSManagedObjectContext = CoreDataStack.shared.persistentContainer.viewContext
+    @objc var managedObjectContext: NSManagedObjectContext = CoreDataStack.shared.persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
