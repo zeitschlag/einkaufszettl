@@ -6,7 +6,9 @@ Einkaufszettl is a pretty simple app for iOS to help you writing your shopping l
 
 You can download it from the [App Store](https://itunes.apple.com/de/app/einkaufszettl/id1016435355?l=de&ls=1&mt=8) for free — it's available world-wide, although it aims for German speaking countries. To run the app, you need iOS 11.
 
-It has an amazing [Website](https://bullenscheisse.de/einkaufszettl/), too. Please visit the homepage to find some screenshots.
+It has an amazing [Website](https://bullenscheisse.de/einkaufszettl/), too. Please visit that website to find some screenshots.
+
+I'd like to mention, that Einkaufszettl uses Gear-Icon, which is made by [Gregor Cresnar](http://www.flaticon.com/authors/gregor-cresnar) from www.flaticon.com
 
 ## Technology
 
