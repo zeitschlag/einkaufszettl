@@ -137,6 +137,9 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
             if onList == true {
                 product.addedToList = NSNumber(integerLiteral: (product.addedToList?.intValue ?? 0) + 1)
             }
+            
+            product.bought = NSNumber(value: false)
+            
         }
         
         do {
