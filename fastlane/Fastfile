@@ -47,7 +47,15 @@ platform :ios do
       value: "#{version_number}"
     )
 
-    gym(scheme: "Einkaufszettl") # Build your app - more options available
+    gym(
+      scheme: "Einkaufszettl",
+      export_options: {
+        method: "app-store",
+        provisioningProfiles: { 
+          "de.bullenscheisse.Einkaufszettl" => "Einkaufszettl (Distribution)"
+          }
+      }
+    ) # Build your app - more options available
     
     git_commit(
       path: ["#{info_plist_path}"],
