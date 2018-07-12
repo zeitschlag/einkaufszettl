@@ -97,7 +97,13 @@ platform :ios do
     
     gym(
       scheme: "Einkaufszettl",
-      include_bitcode: true
+      include_bitcode: true,
+      export_options: {
+        method: "app-store"
+        provisiongProfiles: {
+          "de.bullenscheisse.Einkaufszettl" => "Einkaufszettl (Distribution")"
+          }
+        } 
     ) # Build your app - more options available
     
     git_commit(
