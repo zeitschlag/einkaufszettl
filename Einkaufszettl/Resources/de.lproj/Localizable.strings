@@ -85,6 +85,8 @@
 "SETTINGS.HIDE_CATEGORIES"          = "Kategorien ausblenden";
 "SETTINGS.LICENSES"                 = "Lizenzen";
 "SETTINGS.GESTURE"                  = "Bedienungsgeste";
+"SETTINGS.GESTURE.SWIPE"            = "Wischgeste";
+"SETTINGS.GESTURE.TAP"              = "Tap";
 
 "SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
 
