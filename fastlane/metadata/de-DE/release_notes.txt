@@ -1,12 +1,12 @@
 Yeah, neue Version vom #einkaufszettl. Und alle so: „Yeah, neue Version vom #einkaufszettl“.
 
-Folgendes ist neu:
+## Das ist neu
 
-- Ein Tappen ergänzt die Wischgeste. Überall.
-- Weil es irgendwie alle coolen App-Entwickler_innen schreiben: Das iPhone X wird nun auch unterstützt. Die Anpassungen dafür hielten sich aber in Grenzen (es gibt jetzt Screenshots \o/)
+Nichts. Ausser vielleicht, dass du den Quellcode dieser App jetzt auch auf Github findest: https://github.com/zeitschlag/einkaufszettl/
 
-Folgendes hat sich verbessert:
-- Ein Ziel dieses Releases war es, die Barrierefreiheit der App zu verbessern.
-- Es gab geringfügige Design-Anpassungen. Findest Du sie?
+## Das hat sich verbessert.
+
+- Ein kleiner Bug hatte sich eingeschlichen und wurde jetzt wieder ausgeschlichen (https://github.com/zeitschlag/einkaufszettl/issues/4)
+- Eine fehlende Lokalisierung wurde nachgetragen (https://github.com/zeitschlag/einkaufszettl/issues/3)
 
 Dir ist ein weiterer Fehler aufgefallen? Du hast eine Idee, die den Einkaufszettl besser macht? Du hast eine Frage? Ich freue mich, von Dir zu hören! Schreib mir doch einfach eine Email an einkaufszettl@bullenscheisse.de!
