@@ -18,9 +18,9 @@ enum SelectionMode: Int {
     func readableName() -> String {
         switch (self) {
         case .Tap:
-            return "Tap"
+            return NSLocalizedString("SETTINGS.GESTURE.TAP", comment: "")
         case .Swipe:
-            return "Wischgeste"
+            return NSLocalizedString("SETTINGS.GESTURE.SWIPE", comment: "")
             
         }
     }

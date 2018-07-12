@@ -74,7 +74,7 @@
 /* Category Details */
 "categories.details.name.header"    = "Name";
 
-// Settings
+// MARK: - Settings
 "SETTINGS.TITLE"                    = "Settings";
 "SETTINGS.LICENSES.TITLE"           = "Licenses";
 "SETTINGS.HIDE_CATEGORIES.TITLE"    = "Hide Categories";
@@ -82,6 +82,8 @@
 "SETTINGS.HIDE_CATEGORIES"          = "Hide Categories";
 "SETTINGS.LICENSES"                 = "Licenses";
 "SETTINGS.GESTURE"                  = "Gesture";
+"SETTINGS.GESTURE.SWIPE"            = "Swipe";
+"SETTINGS.GESTURE.TAP"              = "Tap";
 
 "SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
 
