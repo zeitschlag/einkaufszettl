@@ -99,9 +99,9 @@ platform :ios do
       scheme: "Einkaufszettl",
       include_bitcode: true,
       export_options: {
-        method: "app-store"
-        provisiongProfiles: {
-          "de.bullenscheisse.Einkaufszettl" => "Einkaufszettl (Distribution")"
+        method: "app-store",
+        provisioningProfiles: {
+          "de.bullenscheisse.Einkaufszettl" => "Einkaufszettl (Distribution)"
           }
         } 
     ) # Build your app - more options available
