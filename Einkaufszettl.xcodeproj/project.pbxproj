@@ -183,6 +183,7 @@
 		D8D8ED7A1C416849007C8DC0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		D8E82E8E1F929D180090DCEF /* Branding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branding.swift; sourceTree = "<group>"; };
 		D8ED35121EEEEFAF00772E34 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D8F50F152101D23500AB0567 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +351,7 @@
 		D893F0961AC97DE10007763A = {
 			isa = PBXGroup;
 			children = (
+				D8F50F152101D23500AB0567 /* README.md */,
 				D893F0A11AC97DE10007763A /* Einkaufszettl */,
 				D893F0BE1AC97DE10007763A /* EinkaufszettlTests */,
 				D836D3B31DC8F9310044DCEE /* EinkaufszettlUITests */,
