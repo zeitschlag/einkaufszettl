@@ -326,8 +326,10 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         
         guard let fetchedObjects = self.resultsController?.fetchedObjects else { return }
         
-        var sharingString = NSLocalizedString("SHARING.PREFIX", comment: "")
+        var sharingString = ""
         
+        if (SettingsManager.shared.sharingTextDisabled() == false) {
+            sharingString.append(NSLocalizedString("SHARING.PREFIX", comment: ""))
         }
         
         let unboughtObjects = fetchedObjects.filter { (product) -> Bool in
@@ -340,6 +342,10 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         }
         
         sharingString.append(unboughtProductTexts.joined(separator: "\n"))
+                
+        if (SettingsManager.shared.sharingTextDisabled() == false) {
+            sharingString.append(NSLocalizedString("SHARING.SUFFIX", comment: ""))
+        }
         
         let activityViewController = UIActivityViewController(activityItems: [sharingString], applicationActivities: nil)
         self.present(activityViewController, animated: true, completion: nil)
