@@ -326,17 +326,26 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         
         guard let fetchedObjects = self.resultsController?.fetchedObjects else { return }
         
-        var sharingString = NSLocalizedString("SHARING.PREFIX", comment: "")
+        var sharingString = ""
         
-        for product in fetchedObjects {
-            if product.bought?.boolValue == false {
-                //TODO: Add amount, unit, if there's something
-                //TODO: Add singular to unit
-                sharingString.append("\n- \(product.name ?? "")")
-            }
+        if (SettingsManager.shared.sharingTextDisabled() == false) {
+            sharingString.append(NSLocalizedString("SHARING.PREFIX", comment: ""))
         }
         
-        sharingString.append(NSLocalizedString("SHARING.SUFFIX", comment: ""))
+        let unboughtObjects = fetchedObjects.filter { (product) -> Bool in
+            return product.bought?.boolValue == false
+        }
+        
+        let unboughtProductTexts = unboughtObjects.compactMap { (product) -> String? in
+            guard let name = product.name else { return nil }
+            return "- \(name)"
+        }
+        
+        sharingString.append(unboughtProductTexts.joined(separator: "\n"))
+                
+        if (SettingsManager.shared.sharingTextDisabled() == false) {
+            sharingString.append(NSLocalizedString("SHARING.SUFFIX", comment: ""))
+        }
         
         let activityViewController = UIActivityViewController(activityItems: [sharingString], applicationActivities: nil)
         self.present(activityViewController, animated: true, completion: nil)

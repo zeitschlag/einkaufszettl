@@ -35,6 +35,8 @@
 		D864E5EA1FD0822700BFE63F /* OperationSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D864E5E91FD0822700BFE63F /* OperationSettingsTableViewController.swift */; };
 		D86866BB1C31700300AB3002 /* ThingCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D86866BA1C31700300AB3002 /* ThingCategoryTests.m */; };
 		D873EC3A1DA1A681004A9D1C /* Model_4_to_5.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D873EC391DA1A681004A9D1C /* Model_4_to_5.xcmappingmodel */; };
+		D8746C8B222294EC0018D567 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8746C8A222294EC0018D567 /* SwitchTableViewCell.swift */; };
+		D8746C8D222299F80018D567 /* SharingTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8746C8C222299F80018D567 /* SharingTextViewController.swift */; };
 		D87E16661EC86ECF0085D7D7 /* ProductUnit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E16601EC86ECF0085D7D7 /* ProductUnit+CoreDataClass.swift */; };
 		D87E16671EC86ECF0085D7D7 /* ProductUnit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E16611EC86ECF0085D7D7 /* ProductUnit+CoreDataProperties.swift */; };
 		D87E16681EC86ECF0085D7D7 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E16621EC86ECF0085D7D7 /* Product+CoreDataClass.swift */; };
@@ -129,6 +131,8 @@
 		D86866BA1C31700300AB3002 /* ThingCategoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThingCategoryTests.m; sourceTree = "<group>"; };
 		D870D7071DC4CAB700D24A7A /* Einkaufszettl 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Einkaufszettl 6.xcdatamodel"; sourceTree = "<group>"; };
 		D873EC391DA1A681004A9D1C /* Model_4_to_5.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model_4_to_5.xcmappingmodel; sourceTree = "<group>"; };
+		D8746C8A222294EC0018D567 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		D8746C8C222299F80018D567 /* SharingTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingTextViewController.swift; sourceTree = "<group>"; };
 		D87E164D1EC867AD0085D7D7 /* Einkaufszettl 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Einkaufszettl 7.xcdatamodel"; sourceTree = "<group>"; };
 		D87E16601EC86ECF0085D7D7 /* ProductUnit+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductUnit+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D87E16611EC86ECF0085D7D7 /* ProductUnit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductUnit+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -446,6 +450,8 @@
 				D8B3E7491DAE17E200FDE6CD /* EZLLicenseViewController.swift */,
 				D8B3E7471DAACB2300FDE6CD /* EZLSettingsTableViewController.swift */,
 				D864E5E91FD0822700BFE63F /* OperationSettingsTableViewController.swift */,
+				D8746C8A222294EC0018D567 /* SwitchTableViewCell.swift */,
+				D8746C8C222299F80018D567 /* SharingTextViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -683,7 +689,9 @@
 				5F6D54071DC77DA100DA9CEF /* DetailCellWithTextField.swift in Sources */,
 				D832FCC51DC601BF00570C87 /* EZLCategoryVisibilityTableViewCell.swift in Sources */,
 				D87E16671EC86ECF0085D7D7 /* ProductUnit+CoreDataProperties.swift in Sources */,
+				D8746C8B222294EC0018D567 /* SwitchTableViewCell.swift in Sources */,
 				D8061C121C19FB7000E20AAC /* EZLCategoryTableViewController.m in Sources */,
+				D8746C8D222299F80018D567 /* SharingTextViewController.swift in Sources */,
 				D897E6991EDA16F0002B8B2E /* EZLShoppingListTableViewController.swift in Sources */,
 				D87E16691EC86ECF0085D7D7 /* Product+CoreDataProperties.swift in Sources */,
 				D832FCC31DC54E4900570C87 /* EZLCategoryVisbilityTableViewController.swift in Sources */,

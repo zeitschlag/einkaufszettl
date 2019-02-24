@@ -8,26 +8,18 @@
 
 import UIKit
 
-protocol EZLCategoryVisibilityTableViewCellDelegate {
-    func didSwitchValue(of cell:EZLCategoryVisibilityTableViewCell)
-}
 
-class EZLCategoryVisibilityTableViewCell: UITableViewCell {
+class EZLCategoryVisibilityTableViewCell: SwitchTableViewCell {
     
     var category : ProductCategory?
-    
-    var delegate: EZLCategoryVisibilityTableViewCellDelegate?
-    
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var switchElement: UISwitch!
 
-    @IBAction func switchValueChanged(_ sender: AnyObject) {
+    @IBAction override func switchValueChanged(_ sender: AnyObject) {
         
         if let category = self.category, let sender = sender as? UISwitch {
             category.hidden = NSNumber(value: sender.isOn as Bool)
         }
         
-        self.delegate?.didSwitchValue(of: self)
+        super .switchValueChanged(sender)
         
     }
 }

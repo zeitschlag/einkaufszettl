@@ -125,8 +125,8 @@ class EZLCategoryVisbilityTableViewController: UITableViewController {
     }
 }
 
-extension EZLCategoryVisbilityTableViewController: EZLCategoryVisibilityTableViewCellDelegate {
-    func didSwitchValue(of cell: EZLCategoryVisibilityTableViewCell) {
+extension EZLCategoryVisbilityTableViewController: SwitchTableViewCellDelegate {
+    func didSwitchValue(of cell: SwitchTableViewCell) {
         self.updateSaveButton()
     }
 }
