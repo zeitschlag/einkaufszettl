@@ -105,7 +105,6 @@
 		D80DDBC31ED60C6A00D326F6 /* EZLCategoryDetailTableviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZLCategoryDetailTableviewController.swift; sourceTree = "<group>"; };
 		D80DDBC51ED60CB700D326F6 /* EZLThingDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZLThingDetailTableViewController.swift; sourceTree = "<group>"; };
 		D80DDBC71ED7002C00D326F6 /* EZLCategoryDetailDataSouce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZLCategoryDetailDataSouce.swift; sourceTree = "<group>"; };
-		D813230C1B7109F4004B5D80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81ECC0B1B65F74B006A2E3B /* NMAddThingsToListTableVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMAddThingsToListTableVCTests.m; sourceTree = "<group>"; };
 		D81ECC111B66CC69006A2E3B /* NMShoppingThingDetailTableVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMShoppingThingDetailTableVCTests.m; sourceTree = "<group>"; };
 		D81ECC131B682043006A2E3B /* DetailCellWithTextFieldTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCellWithTextFieldTests.m; sourceTree = "<group>"; };
@@ -608,7 +607,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				de,
 			);
@@ -756,7 +754,6 @@
 			children = (
 				D859B1B81B5ED59800575B1C /* Base */,
 				D859B1BA1B5ED5A600575B1C /* de */,
-				D813230C1B7109F4004B5D80 /* en */,
 			);
 			name = Localizable.strings;
 			path = .;

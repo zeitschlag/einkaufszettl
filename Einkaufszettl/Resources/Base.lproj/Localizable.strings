@@ -52,6 +52,9 @@
 
 "REMOVE.%@.IRREVOCABLY" = "Remove %@ irrevocably?";
 
+//MARK: - Product List
+"PRODUCT_LIST.TITLE"    = "Add new products";
+
 //MARK: - Units
 "UNITS.TITLE" = "Choose a unit";
 
@@ -88,5 +91,6 @@
 "SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
 
 "SETTINGS.CATEGORY_DISPLAY_ORDER.TITLE" = "Display Order";
-
 "SETTINGS.LICENCE.TEXT.PREFIX" = "This App uses the following libraries and assets:";
+
+"DISPLAY_ORDER_BUG_MESSAGE" = "Due to a bug in the app I had to reorder the categories. I'm really sorry for that. Please check, if your categories are in the correct orders";
