@@ -87,6 +87,9 @@
 "SETTINGS.GESTURE"                  = "Bedienungsgeste";
 "SETTINGS.GESTURE.SWIPE"            = "Wischgeste";
 "SETTINGS.GESTURE.TAP"              = "Tap";
+"SETTINGS.SHORT_SHARING"            = "Kompakter Sharing-Text";
+"SETTINGS.SHORT_SHARING.ENABLE"     = "Kurzen Sharing-Text verwenden";
+"SETTINGS.SHORT_SHARING.EXPLANATION"= "Aktiviere diesen Schalter, wenn du deine Einkäufe in einer kompakteren Version teilen möchtest.";
 
 "SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xsW-z0-LBV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsW-z0-LBV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -440,6 +441,61 @@
             </objects>
             <point key="canvasLocation" x="3414" y="-697"/>
         </scene>
+        <!--Sharing Text View Controller-->
+        <scene sceneID="oAR-Pq-t9n">
+            <objects>
+                <viewController storyboardIdentifier="SharingTextViewController" id="gem-d4-95K" customClass="SharingTextViewController" customModule="Einkaufszettl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OdU-jj-1y5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7cN-3y-Ys9">
+                                <rect key="frame" x="8" y="72" width="359" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJJ-C0-2Ge">
+                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ql-Ck-yuQ">
+                                        <rect key="frame" x="310" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleShortTextEnabled:" destination="gem-d4-95K" eventType="valueChanged" id="XlF-2b-fAa"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px6-Ep-et1">
+                                <rect key="frame" x="8" y="111" width="359" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o2c-31-bV0" firstAttribute="trailing" secondItem="7cN-3y-Ys9" secondAttribute="trailing" constant="8" id="2kd-9Y-x2G"/>
+                            <constraint firstItem="7cN-3y-Ys9" firstAttribute="top" secondItem="o2c-31-bV0" secondAttribute="top" constant="8" id="KnR-Rb-Kp2"/>
+                            <constraint firstItem="o2c-31-bV0" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Px6-Ep-et1" secondAttribute="bottom" constant="8" id="NRM-nQ-AfD"/>
+                            <constraint firstItem="o2c-31-bV0" firstAttribute="trailing" secondItem="Px6-Ep-et1" secondAttribute="trailing" constant="8" id="QlW-OE-l23"/>
+                            <constraint firstItem="Px6-Ep-et1" firstAttribute="top" secondItem="7cN-3y-Ys9" secondAttribute="bottom" constant="8" id="XZB-ow-5HA"/>
+                            <constraint firstItem="7cN-3y-Ys9" firstAttribute="leading" secondItem="o2c-31-bV0" secondAttribute="leading" constant="8" id="a5I-1Y-1nU"/>
+                            <constraint firstItem="Px6-Ep-et1" firstAttribute="leading" secondItem="o2c-31-bV0" secondAttribute="leading" constant="8" id="b9O-9j-e2j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o2c-31-bV0"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="shortTextEnabled" destination="8ql-Ck-yuQ" id="elU-DB-Y5C"/>
+                        <outlet property="shortTextEnabledLabel" destination="kJJ-C0-2Ge" id="HVg-gQ-Ibc"/>
+                        <outlet property="shortTextExplanationLabel" destination="Px6-Ep-et1" id="ZmW-GB-l6G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djM-tA-3lF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4177" y="-698"/>
+        </scene>
         <!--Category Order-->
         <scene sceneID="Ou5-7g-xHY">
             <objects>
@@ -492,10 +548,6 @@
         <scene sceneID="qIZ-vd-Gxw">
             <objects>
                 <viewController storyboardIdentifier="licenseViewControllerIdentifier" id="ZJy-RP-bXR" customClass="EZLLicenseViewController" customModule="Einkaufszettl" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eli-Ni-m7L"/>
-                        <viewControllerLayoutGuide type="bottom" id="98z-E8-DZZ"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VQm-Ij-9rm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -510,11 +562,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="80X-oU-Qup" firstAttribute="leading" secondItem="VQm-Ij-9rm" secondAttribute="leading" id="3d2-Zh-byW"/>
-                            <constraint firstAttribute="trailing" secondItem="80X-oU-Qup" secondAttribute="trailing" id="Anr-2R-1x3"/>
+                            <constraint firstItem="80X-oU-Qup" firstAttribute="leading" secondItem="kqt-3s-oMw" secondAttribute="leading" id="3d2-Zh-byW"/>
+                            <constraint firstItem="kqt-3s-oMw" firstAttribute="trailing" secondItem="80X-oU-Qup" secondAttribute="trailing" id="Anr-2R-1x3"/>
                             <constraint firstItem="80X-oU-Qup" firstAttribute="top" secondItem="VQm-Ij-9rm" secondAttribute="top" id="bZt-Si-mZ8"/>
-                            <constraint firstItem="98z-E8-DZZ" firstAttribute="top" secondItem="80X-oU-Qup" secondAttribute="bottom" id="zu3-iM-0cr"/>
+                            <constraint firstItem="kqt-3s-oMw" firstAttribute="bottom" secondItem="80X-oU-Qup" secondAttribute="bottom" id="zu3-iM-0cr"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="kqt-3s-oMw"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="Lizenzen" id="c0m-Qo-hR4"/>
@@ -649,7 +702,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Gear" width="22" height="22"/>
+        <image name="Gear" width="5.2800002098083496" height="5.2800002098083496"/>
     </resources>
     <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

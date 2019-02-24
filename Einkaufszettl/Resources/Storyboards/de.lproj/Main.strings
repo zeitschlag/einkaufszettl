@@ -1,0 +1,75 @@
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "80X-oU-Qup"; */
+"80X-oU-Qup.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "Bed-5d-7eq"; */
+"Bed-5d-7eq.text" = "Detail";
+
+/* Class = "UINavigationItem"; title = "Add new things"; ObjectID = "Czb-s5-7ED"; */
+"Czb-s5-7ED.title" = "Add new things";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DTx-e7-dAb"; */
+"DTx-e7-dAb.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Details"; ObjectID = "DrM-RQ-Jjn"; */
+"DrM-RQ-Jjn.title" = "Details";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "EBv-MN-uzZ"; */
+"EBv-MN-uzZ.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "HwU-Ih-2ka"; */
+"HwU-Ih-2ka.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Jwb-ZE-gLW"; */
+"Jwb-ZE-gLW.text" = "Title";
+
+/* Class = "UITextField"; text = "Text"; ObjectID = "U94-d8-FWv"; */
+"U94-d8-FWv.text" = "Text";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "UBj-i4-8Hp"; */
+"UBj-i4-8Hp.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Vfa-Ju-iCe"; */
+"Vfa-Ju-iCe.text" = "Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WzP-VW-xNW"; */
+"WzP-VW-xNW.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Lizenzen"; ObjectID = "c0m-Qo-hR4"; */
+"c0m-Qo-hR4.title" = "Lizenzen";
+
+/* Class = "UITextField"; text = "Text"; ObjectID = "dav-4e-bpN"; */
+"dav-4e-bpN.text" = "Text";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "hCE-zf-dfD"; */
+"hCE-zf-dfD.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Category Order"; ObjectID = "nNp-wH-Fvh"; */
+"nNp-wH-Fvh.title" = "Category Order";
+
+/* Class = "UINavigationItem"; title = "Einkaufszettl"; ObjectID = "o4o-Rt-tty"; */
+"o4o-Rt-tty.title" = "Einkaufszettl";
+
+/* Class = "UINavigationItem"; title = "Visibility"; ObjectID = "osF-QH-nPr"; */
+"osF-QH-nPr.title" = "Visibility";
+
+/* Class = "UINavigationItem"; title = "Gesture"; ObjectID = "qXB-YX-rWr"; */
+"qXB-YX-rWr.title" = "Gesture";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "qn2-We-U8E"; */
+"qn2-We-U8E.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sUw-oS-xst"; */
+"sUw-oS-xst.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "th4-wn-aEN"; */
+"th4-wn-aEN.text" = "Label";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "uth-vH-C3R"; */
+"uth-vH-C3R.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "vRR-wu-Zv3"; */
+"vRR-wu-Zv3.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "yUc-6d-xz2"; */
+"yUc-6d-xz2.text" = "Title";

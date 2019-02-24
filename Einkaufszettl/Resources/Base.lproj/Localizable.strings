@@ -87,6 +87,9 @@
 "SETTINGS.GESTURE"                  = "Gesture";
 "SETTINGS.GESTURE.SWIPE"            = "Swipe";
 "SETTINGS.GESTURE.TAP"              = "Tap";
+"SETTINGS.SHORT_SHARING"            = "Short Sharing Text";
+"SETTINGS.SHORT_SHARING.ENABLE"     = "Use Short Sharing-Text";
+"SETTINGS.SHORT_SHARING.EXPLANATION"= "Enable this switch to use a more compact text, when you want to share your grocery list.";
 
 "SETTINGS.VERSION.%@"               = "Version %@ (Build %@)";
 
