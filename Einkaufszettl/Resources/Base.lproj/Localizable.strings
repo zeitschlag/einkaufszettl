@@ -36,7 +36,7 @@
 "SHOPPING_LIST.SETTINGS.TITLE.ACCESSIBILITY.HINT"      = "Opens the In-App-Settings, where you can order the categories, for example.";
 
 //MARK: - Sharing
-"SHARING.PREFIX"                    = "Can you buy the following things, when you do the shopping, please?\n";
+"SHARING.PREFIX"                    = "Can you buy the following things, when you do the shopping, please?\n\n";
 "SHARING.SUFFIX"                    = "\n\nThank you very much!";
 
 /* Details */

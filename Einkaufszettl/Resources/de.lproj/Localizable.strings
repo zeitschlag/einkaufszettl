@@ -36,7 +36,7 @@
 "SHOPPING_LIST.SETTINGS.TITLE.ACCESSIBILITY.HINT"      = "Öffnet die Einstellung, wo Du beispielsweise die Reihenfolge der Kategorien ändern kannst.";
 
 //MARK: - Sharing
-"SHARING.PREFIX"                     = "Kannst Du bitte noch folgendes mitbringen, wenn Du einkaufen gehst?\n";
+"SHARING.PREFIX"                     = "Kannst Du bitte noch folgendes mitbringen, wenn Du einkaufen gehst?\n\n";
 "SHARING.SUFFIX"                    = "\n\nVielen Dank!";
 
 /* Details */
