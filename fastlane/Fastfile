@@ -30,7 +30,7 @@ platform :ios do
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
     
-    version_number = '0.6.1'
+    version_number = '0.6.2'
     build_number = number_of_commits
 
     info_plist_path = './Einkaufszettl/Resources/Supporting Files/Info.plist'
@@ -77,7 +77,7 @@ platform :ios do
     # match(type: "appstore")
     # snapshot
     
-    version_number = '0.6.1'
+    version_number = '0.6.2'
     
     build_number = number_of_commits
 
