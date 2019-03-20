@@ -2,6 +2,6 @@ Yeah, neue Version vom #einkaufszettl. Und alle so: „Yeah, neue Version vom #e
 
 Folgendes ist neu:
 
-- Wenn dir der Text beim teilen zu lang war, kannst du ihn jetzt kürzen. Wirf dazu mal einen Blick in die Einstellungen.
+- Der Text, mit dem du deine Einkäufe teilen kannst, ist nun kompakter.
 
 Dir ist ein weiterer Fehler aufgefallen? Du hast eine Idee, die den Einkaufszettl besser macht? Du hast eine Frage? Ich freue mich, von Dir zu hören! Schreib mir doch einfach eine Email an einkaufszettl@bullenscheisse.de!
