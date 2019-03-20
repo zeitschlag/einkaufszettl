@@ -35,7 +35,6 @@ class SettingsManager: NSObject {
     
     private enum SettingsKey {
         static let selectionModeSettings = "kSelectionModeSettingsKey"
-        static let sharingTextDisabled = "kSharingTextDisabledSetingsKey"
     }
     
     @objc
@@ -53,15 +52,4 @@ class SettingsManager: NSObject {
         UserDefaults.standard.set(selectionMode.rawValue, forKey: SettingsKey.selectionModeSettings)
         UserDefaults.standard.synchronize()
     }
-    
-    @objc
-    func sharingTextDisabled() -> Bool {
-        return UserDefaults.standard.bool(forKey: SettingsKey.sharingTextDisabled)
-    }
-    
-    @objc
-    func setDisabledSharingText(to sharingDisabled: Bool) {
-        UserDefaults.standard.set(sharingDisabled, forKey: SettingsKey.sharingTextDisabled)
-    }
-    
 }

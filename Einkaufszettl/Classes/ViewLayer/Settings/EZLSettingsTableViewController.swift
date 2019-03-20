@@ -19,7 +19,6 @@ class EZLSettingsTableViewController: UITableViewController {
         ],
         [
             NSLocalizedString("SETTINGS.GESTURE", comment: "Bedienung"),
-            NSLocalizedString("SETTINGS.SHORT_SHARING", comment: "Kurzer Sharing-Text")
         ],
         [
             NSLocalizedString("SETTINGS.LICENSES", comment: "Licenses")
@@ -91,13 +90,6 @@ class EZLSettingsTableViewController: UITableViewController {
                 
                 self.navigationController?.pushViewController(operationSettingsTableViewController, animated: true)
                 
-                
-            case 1:
-                let sharingTextViewController = mainStoryboard.instantiateViewController(withIdentifier: SharingTextViewController.identifier) as! SharingTextViewController
-                
-                self.navigationController?.pushViewController(sharingTextViewController, animated: true)
-                
-                break
             default:
                 break
             }
