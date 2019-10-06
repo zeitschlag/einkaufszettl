@@ -332,8 +332,18 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         }
         
         let unboughtProductTexts = unboughtObjects.compactMap { (product) -> String? in
+
             guard let name = product.name else { return nil }
-            return "- \(name)"
+
+            var completeProductString: String = "- "
+
+            if let unitText = product.amountAndUnit {
+                completeProductString.append(unitText + " ")
+            }
+
+            completeProductString.append(name)
+
+            return completeProductString
         }
         
         sharingString.append(unboughtProductTexts.joined(separator: "\n"))
