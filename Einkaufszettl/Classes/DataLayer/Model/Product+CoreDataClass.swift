@@ -22,20 +22,29 @@ public class Product: NSManagedObject {
         }
     }
 
-    var detailText: String {
+    var detailText: String? {
+        get {
+            return self.amountAndUnit
+        }
+    }
+
+    var amountAndUnit: String? {
         get {
             let numberFormatter = NumberFormatter()
             numberFormatter.numberStyle = .decimal
             
-            guard let amount = self.amount, amount.doubleValue > 0.0 else { return " " }
-            
-            guard let amountString = numberFormatter.string(from: amount) else {
-                NSLog("Couldn't format \(amount)")
-                return ""
-            }
+            guard let amount = self.amount, amount.doubleValue > 0.0 else { return nil }
+            guard let amountString = numberFormatter.string(from: amount) else { return nil }
             
             if let unit = self.unit {
-                return "\(amountString) \(unit.name ?? "")"
+                let unitString: String
+
+                if amount == 1 {
+                    unitString = unit.singular ?? unit.name ?? ""
+                } else {
+                    unitString =  unit.plural ?? unit.name ?? ""
+                }
+                return "\(amountString) \(unitString)"
             } else {
                 return amountString
             }
