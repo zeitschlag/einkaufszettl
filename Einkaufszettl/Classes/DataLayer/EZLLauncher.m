@@ -224,6 +224,8 @@
                 ProductUnit *unit = [NSEntityDescription insertNewObjectForEntityForName:@"ProductUnit"
                                                            inManagedObjectContext:self.managedObjectContext];
                 [unit setName:[currUnit valueForKey:@"name"]];
+                [unit setPlural:[currUnit valueForKey:@"plural"]];
+                [unit setSingular:[currUnit valueForKey:@"singular"]];
             }
             
             if(![[self managedObjectContext] save:&error]) {
