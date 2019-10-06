@@ -37,13 +37,25 @@ class EZLUnitDetailTableViewController: UITableViewController {
     }
     
     @IBAction func saveUnit(_ sender: Any) {
-        
-        let firstRow = IndexPath(row: 0, section: 0)
-        guard let cell = self.tableView.cellForRow(at: firstRow) as? DetailCellWithTextField else { return }
-        
-        let nameOfUnit = cell.detailTextField.text
+
+        let nameRow = IndexPath(row: 0, section: 0)
+        guard let nameCell = self.tableView.cellForRow(at: nameRow) as? DetailCellWithTextField else { return }
+
+        let singularRow = IndexPath(row: 1, section: 0)
+        guard let singularCell = self.tableView.cellForRow(at: singularRow) as? DetailCellWithTextField else { return }
+
+        let pluralRow = IndexPath(row: 2, section: 0)
+        guard let pluralCell = self.tableView.cellForRow(at: pluralRow) as? DetailCellWithTextField else { return }
+
+        let nameOfUnit = nameCell.detailTextField.text
         self.unit?.name = nameOfUnit
-        
+
+        let singularOfUnit = singularCell.detailTextField.text
+        self.unit?.singular = singularOfUnit
+
+        let pluralOfUnit = pluralCell.detailTextField.text
+        self.unit?.plural = pluralOfUnit
+
         do {
             try self.managedObjectContext.save()
         } catch let error as NSError {
@@ -52,7 +64,6 @@ class EZLUnitDetailTableViewController: UITableViewController {
         
         self.navigationController?.popViewController(animated: true)
     }
-    
 }
 
 extension EZLUnitDetailTableViewController: EZLButtonTableViewCellDelegate {
