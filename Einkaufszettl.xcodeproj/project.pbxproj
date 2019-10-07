@@ -610,6 +610,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 				de,
 			);
@@ -931,6 +932,7 @@
 				DEVELOPMENT_TEAM = 4H44S5YAWR;
 				INFOPLIST_FILE = "Einkaufszettl/Resources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.bullenscheisse.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Einkaufszettl (Development)";
@@ -949,6 +951,7 @@
 				DEVELOPMENT_TEAM = 4H44S5YAWR;
 				INFOPLIST_FILE = "Einkaufszettl/Resources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.bullenscheisse.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Einkaufszettl (Distribution)";
