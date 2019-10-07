@@ -2,11 +2,6 @@ Yeah, neue Version vom #einkaufszettl. Und alle so: „Yeah, neue Version vom #e
 
 Folgendes ist neu:
 
-- Ein Tappen ergänzt die Wischgeste. Überall.
-- Weil es irgendwie alle coolen App-Entwickler_innen schreiben: Das iPhone X wird nun auch unterstützt. Die Anpassungen dafür hielten sich aber in Grenzen (es gibt jetzt Screenshots \o/)
-
-Folgendes hat sich verbessert:
-- Ein Ziel dieses Releases war es, die Barrierefreiheit der App zu verbessern.
-- Es gab geringfügige Design-Anpassungen. Findest Du sie?
+- Wenn du deine Einkäufe teilen willst, werden jetzt die Mengenangaben richtig berücksichtigt.
 
 Dir ist ein weiterer Fehler aufgefallen? Du hast eine Idee, die den Einkaufszettl besser macht? Du hast eine Frage? Ich freue mich, von Dir zu hören! Schreib mir doch einfach eine Email an einkaufszettl@bullenscheisse.de!
