@@ -72,7 +72,7 @@ extension EZLUnitDetailDataSource: UITableViewDataSource {
             cell.isNumeric = false
             cell.isDecimalNumeric = false
 
-            cell.detailTitleLabel.text = NSLocalizedString("Singular", comment: "Singular for 'Name of Product'")
+            cell.detailTitleLabel.text = NSLocalizedString("UNITS.SINGULAR", comment: "Singular for 'Name of Product'")
             cell.detailTextField.text = unit.singular ?? unit.name ?? ""
             cell.detailTextField.keyboardType = UIKeyboardType.alphabet
             cell.detailTextField.delegate = cell
@@ -85,7 +85,7 @@ extension EZLUnitDetailDataSource: UITableViewDataSource {
             cell.isNumeric = false
             cell.isDecimalNumeric = false
 
-            cell.detailTitleLabel.text = NSLocalizedString("Plural", comment: "Plural of 'Name of Product'")
+            cell.detailTitleLabel.text = NSLocalizedString("UNITS.PLURAL", comment: "Plural of 'Name of Product'")
             cell.detailTextField.text = unit.plural ?? unit.name ?? ""
             cell.detailTextField.keyboardType = UIKeyboardType.alphabet
             cell.detailTextField.delegate = cell

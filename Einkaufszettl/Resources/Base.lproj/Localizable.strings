@@ -57,6 +57,8 @@
 
 //MARK: - Units
 "UNITS.TITLE" = "Choose a unit";
+"UNITS.SINGULAR" = "Singular";
+"UNITS.PLURAL" = "Plural";
 
 "no_name" = "(No Name)";
 "SELECT.THIS_UNIT" = "Select";
