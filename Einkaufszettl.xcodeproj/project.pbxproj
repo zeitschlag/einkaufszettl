@@ -53,7 +53,7 @@
 		D893F0A81AC97DE10007763A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D893F0A71AC97DE10007763A /* AppDelegate.m */; };
 		D893F0AB1AC97DE10007763A /* Einkaufszettl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D893F0A91AC97DE10007763A /* Einkaufszettl.xcdatamodeld */; };
 		D893F0B11AC97DE10007763A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D893F0AF1AC97DE10007763A /* Main.storyboard */; };
-		D893F0B31AC97DE10007763A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D893F0B21AC97DE10007763A /* Images.xcassets */; };
+		D893F0B31AC97DE10007763A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D893F0B21AC97DE10007763A /* Assets.xcassets */; };
 		D893F0C21AC97DE10007763A /* EinkaufszettlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D893F0C11AC97DE10007763A /* EinkaufszettlTests.m */; };
 		D897E6991EDA16F0002B8B2E /* EZLShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D897E6981EDA16F0002B8B2E /* EZLShoppingListTableViewController.swift */; };
 		D89F9A711B3056EC00F9BC5E /* ThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F9A701B3056EC00F9BC5E /* ThingTests.m */; };
@@ -153,7 +153,7 @@
 		D893F0A71AC97DE10007763A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D893F0AA1AC97DE10007763A /* Einkaufszettl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Einkaufszettl.xcdatamodel; sourceTree = "<group>"; };
 		D893F0B01AC97DE10007763A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D893F0B21AC97DE10007763A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D893F0B21AC97DE10007763A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D893F0BB1AC97DE10007763A /* EinkaufszettlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EinkaufszettlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D893F0C01AC97DE10007763A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D893F0C11AC97DE10007763A /* EinkaufszettlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EinkaufszettlTests.m; sourceTree = "<group>"; };
@@ -512,7 +512,7 @@
 				D893F0A21AC97DE10007763A /* Supporting Files */,
 				D8B3E7511DAED9CB00FDE6CD /* Einkaufszettl-Bridging-Header.h */,
 				D893F0A91AC97DE10007763A /* Einkaufszettl.xcdatamodeld */,
-				D893F0B21AC97DE10007763A /* Images.xcassets */,
+				D893F0B21AC97DE10007763A /* Assets.xcassets */,
 				D8B3E74C1DAED21800FDE6CD /* Licenses.txt */,
 				D859B1B91B5ED59800575B1C /* Localizable.strings */,
 				D8D8ED7A1C416849007C8DC0 /* Settings.bundle */,
@@ -610,6 +610,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 				de,
 			);
@@ -650,7 +651,7 @@
 				D8936F271B4C6B5C00C868C7 /* LaunchScreen.storyboard in Resources */,
 				D8D360691B4ADFA90052B405 /* AppIcon.appiconset in Resources */,
 				D8AC4CB01C0F3EC700959D0C /* categories-en.json in Resources */,
-				D893F0B31AC97DE10007763A /* Images.xcassets in Resources */,
+				D893F0B31AC97DE10007763A /* Assets.xcassets in Resources */,
 				D8D5202A1E4E36B400232732 /* units-en.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
