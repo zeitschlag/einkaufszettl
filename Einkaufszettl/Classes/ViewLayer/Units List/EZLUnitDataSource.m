@@ -27,9 +27,9 @@
                                                              forIndexPath:indexPath];
     ProductUnit *unit = [[self resultsController] objectAtIndexPath:indexPath];
     if([[self.product unit] isEqual:unit]) {
-        cell.textLabel.font = [Branding.shared selectedItemFont];
+        cell.textLabel.font = [OldBranding.shared selectedItemFont];
     } else {
-        cell.textLabel.font = [Branding.shared unselectedItemFont];
+        cell.textLabel.font = [OldBranding.shared unselectedItemFont];
     }
     if(unit.name != nil && [[unit name] isEqualToString:@""] == false) {
         cell.textLabel.text = unit.name;

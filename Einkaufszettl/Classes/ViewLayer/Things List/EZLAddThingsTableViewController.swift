@@ -216,9 +216,9 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         let product = resultsController.object(at: indexPath)
         
         if (product.onList?.boolValue ?? false) == true {
-            cell.textLabel?.font = Branding.shared.selectedItemFont()
+            cell.textLabel?.font = OldBranding.shared.selectedItemFont()
         } else {
-            cell.textLabel?.font = Branding.shared.unselectedItemFont()
+            cell.textLabel?.font = OldBranding.shared.unselectedItemFont()
         }
         
         cell.textLabel?.text = product.name
@@ -342,7 +342,7 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
 //            }
         }
         
-        addToListAction.backgroundColor = Branding.shared.actionColor()
+        addToListAction.backgroundColor = OldBranding.shared.actionColor()
         
         let swipeActionConfiguration = UISwipeActionsConfiguration(actions: [addToListAction])
         swipeActionConfiguration.performsFirstActionWithFullSwipe = true

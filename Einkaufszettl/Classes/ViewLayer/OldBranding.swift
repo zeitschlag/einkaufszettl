@@ -8,9 +8,18 @@
 
 import UIKit
 
-class Branding: NSObject {
+/**
+Ich will das Branding auf PodcastAnalytics umbauen. Ich brauche:
+- eine TextColor
+- eine DetailTextColor
+- eine BackgroundColor
+- eine ActionColor
+ */
+
+
+class OldBranding: NSObject {
     @objc
-    static let shared = Branding()
+    static let shared = OldBranding()
     
     //MARK: - Colors
     

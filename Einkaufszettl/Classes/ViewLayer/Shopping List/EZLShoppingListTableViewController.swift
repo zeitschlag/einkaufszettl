@@ -14,7 +14,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
     var managedObjectContext = CoreDataStack.shared.persistentContainer.viewContext
     var resultsController: NSFetchedResultsController<Product>?
     
-    let branding = Branding.shared
+    let branding = OldBranding.shared
 
     @IBOutlet weak var trashBinButton: UIBarButtonItem!
     @IBOutlet weak var settingsButton: UIBarButtonItem!
@@ -170,7 +170,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
             completionHandler(true)
         }
         
-        toggleBoughtAction.backgroundColor = Branding.shared.actionColor()
+        toggleBoughtAction.backgroundColor = OldBranding.shared.actionColor()
         
         let swipeActionConfiguration = UISwipeActionsConfiguration(actions: [toggleBoughtAction])
         swipeActionConfiguration.performsFirstActionWithFullSwipe = true
@@ -198,7 +198,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
 
         }
         
-        removeFromListAction.backgroundColor = Branding.shared.actionColor()
+        removeFromListAction.backgroundColor = OldBranding.shared.actionColor()
         
         let swipeActionConfiguration = UISwipeActionsConfiguration(actions: [removeFromListAction])
         swipeActionConfiguration.performsFirstActionWithFullSwipe = true

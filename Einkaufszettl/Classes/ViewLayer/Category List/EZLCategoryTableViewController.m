@@ -219,7 +219,7 @@
         completionHandler(YES);
     }];
     
-    selectAction.backgroundColor = [Branding.shared actionColor];
+    selectAction.backgroundColor = [OldBranding.shared actionColor];
     
     UISwipeActionsConfiguration *swipeActionConfiguration = [UISwipeActionsConfiguration configurationWithActions:@[selectAction]];
     
@@ -245,9 +245,9 @@
     ProductCategory *category = [[self resultsController] objectAtIndexPath:indexPath];
 
     if([self.product.category isEqual:category]) {
-        cell.textLabel.font = [Branding.shared selectedItemFont];
+        cell.textLabel.font = [OldBranding.shared selectedItemFont];
     } else {
-        cell.textLabel.font = [Branding.shared unselectedItemFont];
+        cell.textLabel.font = [OldBranding.shared unselectedItemFont];
     }
     if(![[category name] isEqualToString:@""]) {
         [[cell textLabel] setText:category.name];
