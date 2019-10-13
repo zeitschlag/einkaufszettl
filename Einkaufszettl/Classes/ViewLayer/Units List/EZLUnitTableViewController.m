@@ -135,7 +135,7 @@
         
     }];
     
-    selectAction.backgroundColor = [Branding.shared actionColor];
+    selectAction.backgroundColor = [OldBranding.shared actionColor];
     
     UISwipeActionsConfiguration *swipeActionConfiguration = [UISwipeActionsConfiguration configurationWithActions:@[selectAction]];
     
