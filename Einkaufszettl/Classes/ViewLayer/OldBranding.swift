@@ -16,6 +16,44 @@ Ich will das Branding auf PodcastAnalytics umbauen. Ich brauche:
 - eine ActionColor
  */
 
+extension UIColor {
+
+    enum CustomColors: String {
+
+        case defaultText = "defaultTextColor"
+        case actionText = "actionTextColor"
+        case defaultBackground = "defaultBackgroundColor"
+        case highlightBackground = "highlightBackgroundColor"
+        case highlightText = "highlightTextColor"
+
+        var color: UIColor {
+            return UIColor(named: self.rawValue) ?? UIColor.systemRed
+        }
+    }
+}
+
+class Branding {
+
+    static let shared = Branding()
+
+    let defaultTextColor = UIColor.CustomColors.defaultText.color
+    let defaultBackgroundColor = UIColor.CustomColors.defaultBackground.color
+    let highlightBackgroundColor = UIColor.CustomColors.highlightBackground.color
+    let highlightTextColor = UIColor.CustomColors.highlightText.color
+    let actionColor = UIColor.CustomColors.actionText.color
+
+    let defaultTextFont = UIFont.preferredFont(forTextStyle: .body)
+    let defaultDetailTextFont = UIFont.preferredFont(forTextStyle: .footnote)
+
+    func setupBranding() {
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.tintColor = actionColor
+        navigationBarAppearance.barTintColor = defaultBackgroundColor
+        navigationBarAppearance.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: defaultTextColor
+        ]
+    }
+}
 
 class OldBranding: NSObject {
     @objc
@@ -29,11 +67,11 @@ class OldBranding: NSObject {
     
     @objc
     func actionColor() -> UIColor {
-        return self.redColor
+        return Branding.shared.actionColor
     }
     
     func productNotBoughtTextColor() -> UIColor {
-        return self.black
+        return Branding.shared.defaultTextColor
     }
     
     func productBoughtTextColor() -> UIColor {
@@ -41,7 +79,7 @@ class OldBranding: NSObject {
     }
     
     func strikeThroughColor() -> UIColor {
-            return self.redColor
+        return self.redColor
     }
     
     func tintColor() -> UIColor {
