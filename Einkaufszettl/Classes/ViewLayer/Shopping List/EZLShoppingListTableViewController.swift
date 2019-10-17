@@ -57,6 +57,10 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+
+        if #available(iOS 13.0, *) {
+            self.tableView.backgroundColor = .systemBackground
+        }
         
         let alertShown = UserDefaults.standard.bool(forKey: kMaxDisplayOrderValueBugFixedAlertShownKey)
         
@@ -255,6 +259,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         
         cell.textLabel?.attributedText = textLabelText
         cell.detailTextLabel?.text = product.detailText
+        cell.tintColor = branding.actionColor()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

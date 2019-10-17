@@ -14,6 +14,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = self.product.name;
+    if (@available(iOS 13.0, *)) {
+        self.tableView.backgroundColor = UIColor.systemBackgroundColor;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {

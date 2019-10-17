@@ -32,8 +32,9 @@ extension UIColor {
     }
 }
 
-class Branding {
+class Branding: NSObject {
 
+    @objc
     static let shared = Branding()
 
     let defaultTextColor = UIColor.CustomColors.defaultText.color
@@ -45,10 +46,10 @@ class Branding {
     let defaultTextFont = UIFont.preferredFont(forTextStyle: .body)
     let defaultDetailTextFont = UIFont.preferredFont(forTextStyle: .footnote)
 
+    @objc
     func setupBranding() {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = actionColor
-        navigationBarAppearance.barTintColor = defaultBackgroundColor
         navigationBarAppearance.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: defaultTextColor
         ]
@@ -63,7 +64,6 @@ class OldBranding: NSObject {
     
     private let redColor = UIColor(red: 204/255, green: 0/255, blue: 0/255, alpha: 1.0)
     private let gray = UIColor.gray
-    private let black = UIColor.black
     
     @objc
     func actionColor() -> UIColor {
