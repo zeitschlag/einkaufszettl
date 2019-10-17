@@ -22,7 +22,9 @@
     launcher.managedObjectContext = [CoreDataStack shared].persistentContainer.viewContext;
     [launcher readInitialData];
     [launcher migrateCategories];
-        
+
+    [Branding.shared setupBranding];
+
     if ([[NSUserDefaults standardUserDefaults] boolForKey:kAskedUserForNotification] == NO) {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kAskedUserForNotification];
         
