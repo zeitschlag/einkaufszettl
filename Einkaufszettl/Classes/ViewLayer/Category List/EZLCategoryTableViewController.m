@@ -48,7 +48,7 @@
     [self.searchController setHidesNavigationBarDuringPresentation:NO];
     
     self.searchController.searchBar.delegate = self;
-    [[self.searchController searchBar] setTintColor:self.view.tintColor ];
+    self.searchController.searchBar.tintColor = [OldBranding.shared actionColor];
     [[self.searchController searchBar] setSearchBarStyle:UISearchBarStyleMinimal];
     [[self.searchController searchBar] setPlaceholder:NSLocalizedString(@"search category placeholder", nil)];
     
@@ -249,11 +249,16 @@
     } else {
         cell.textLabel.font = [OldBranding.shared unselectedItemFont];
     }
-    if(![[category name] isEqualToString:@""]) {
-        [[cell textLabel] setText:category.name];
+
+    cell.textLabel.textColor = [OldBranding.shared defaultTextColor];
+
+    if([[category name] isEqualToString:@""] == NO) {
+        cell.textLabel.text = category.name;
     } else {
         [[cell textLabel] setText:NSLocalizedString(@"no_name", nil)];
     }
+
+    cell.tintColor = [OldBranding.shared actionColor];
     
     return cell;
 }

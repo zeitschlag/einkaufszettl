@@ -24,12 +24,11 @@
     self.tableView.dataSource = self.dataSource;
     self.tableView.delegate = self;
     self.title = self.category.name;
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (@available(iOS 13.0, *)) {
+        self.view.backgroundColor = UIColor.systemBackgroundColor;
+        self.tableView.backgroundColor = UIColor.systemBackgroundColor;
+    }
 }
 
 - (void) viewDidAppear:(BOOL)animated
