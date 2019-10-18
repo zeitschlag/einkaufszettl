@@ -57,6 +57,7 @@ extension EZLCategoryDetailDataSource: UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: deleteCategoryCellIdentifier, for: indexPath) as? EZLButtonTableViewCell {
                 
                 cell.delegate = self.buttonCellDelegate
+                cell.button.tintColor = OldBranding.shared.actionColor()
                 cell.button.setTitle(NSLocalizedString("GENERAL.REMOVE", comment: "Remove"), for: UIControlState.normal)
                 
                 return cell

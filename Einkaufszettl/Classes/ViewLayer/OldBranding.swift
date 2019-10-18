@@ -81,9 +81,10 @@ class OldBranding: NSObject {
     func strikeThroughColor() -> UIColor {
         return self.redColor
     }
-    
-    func tintColor() -> UIColor {
-        return self.redColor
+
+    @objc
+    func defaultTextColor() -> UIColor {
+        return Branding.shared.defaultTextColor;
     }
     
     // MARK: - Fonts

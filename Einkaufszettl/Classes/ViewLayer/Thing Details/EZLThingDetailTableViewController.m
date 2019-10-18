@@ -15,7 +15,7 @@
     [super viewDidLoad];
     self.title = self.product.name;
     if (@available(iOS 13.0, *)) {
-        self.tableView.backgroundColor = UIColor.systemBackgroundColor;
+        self.tableView.backgroundColor = UIColor.systemGroupedBackgroundColor;
     }
 }
 
