@@ -66,12 +66,16 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         
         self.searchController?.searchBar.sizeToFit()
         self.searchController?.searchBar.delegate = self
-        self.searchController?.searchBar.tintColor = self.view.tintColor
+        self.searchController?.searchBar.tintColor = OldBranding.shared.actionColor()
         self.searchController?.searchBar.searchBarStyle = UISearchBarStyle.minimal
         self.searchController?.searchBar.placeholder = NSLocalizedString("search thing placeholder", comment: "Placeholder for Searchbar in Things list")
         
         self.navigationItem.searchController = self.searchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
+
+        if #available(iOS 13.0, *) {
+            self.tableView.backgroundColor = .systemBackground
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -220,8 +224,10 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         } else {
             cell.textLabel?.font = OldBranding.shared.unselectedItemFont()
         }
-        
+
+        cell.tintColor = OldBranding.shared.actionColor()
         cell.textLabel?.text = product.name
+        cell.textLabel?.textColor = Branding.shared.defaultTextColor
         cell.detailTextLabel?.text = product.detailText
         
     }
