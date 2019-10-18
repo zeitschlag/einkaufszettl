@@ -124,13 +124,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add new things" id="Czb-s5-7ED">
                         <barButtonItem key="leftBarButtonItem" enabled="NO" style="done" systemItem="add" id="hdT-1h-Er9">
-                            <color key="tintColor" red="0.80000000000000004" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="createNewProductButtonTapped:" destination="JWp-6u-0rT" id="Geh-Tq-vZT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="d6i-ic-uUF">
-                            <color key="tintColor" red="0.80603522062301636" green="0.23287540674209595" blue="0.15520560741424561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="doneButtonTapped:" destination="JWp-6u-0rT" id="S6m-21-GpM"/>
                             </connections>
