@@ -16,7 +16,6 @@
 @interface EZLUnitDataSource : NSObject <UITableViewDataSource>
 
 @property NSFetchedResultsController *resultsController;
-@property UIColor *tintColor;
 
 @property Product *product;
 

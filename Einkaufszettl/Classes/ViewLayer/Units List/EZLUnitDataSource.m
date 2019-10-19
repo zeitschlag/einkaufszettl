@@ -37,6 +37,7 @@
         cell.textLabel.text = NSLocalizedString(@"no_name", nil);
     }
 
+    cell.tintColor = [OldBranding.shared actionColor];
     return cell;
 }
 

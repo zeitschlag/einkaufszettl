@@ -24,6 +24,10 @@ class EZLUnitDetailTableViewController: UITableViewController {
         
         self.tableView.dataSource = self.dataSource
         self.title = unit.name
+
+        if #available(iOS 13.0, *) {
+            self.tableView.backgroundColor = .systemBackground
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

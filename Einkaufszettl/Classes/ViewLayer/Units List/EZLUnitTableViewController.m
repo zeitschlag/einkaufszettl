@@ -45,7 +45,7 @@
     [self.searchController setHidesNavigationBarDuringPresentation:NO];
     
     self.searchController.searchBar.delegate = self;
-    [[self.searchController searchBar] setTintColor:self.view.tintColor ];
+    self.searchController.searchBar.tintColor = [OldBranding.shared actionColor];
     [[self.searchController searchBar] setSearchBarStyle:UISearchBarStyleMinimal];
     [[self.searchController searchBar] setPlaceholder:NSLocalizedString(@"search unit placeholder", nil)];
     
@@ -59,7 +59,10 @@
     self.dataSource = [[EZLUnitDataSource alloc] init];
     self.dataSource.product = self.product;
     self.dataSource.resultsController = self.resultsController;
-    self.dataSource.tintColor = self.view.tintColor;
+
+    if (@available(iOS 13.0, *)) {
+        self.tableView.backgroundColor = UIColor.systemBackgroundColor;
+    }
     
     self.tableView.dataSource = self.dataSource;
 }
