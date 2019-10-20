@@ -32,9 +32,9 @@ class OperationSettingsTableViewController: UITableViewController {
         cell.textLabel?.text = mode.readableName()
         
         if mode == SettingsManager.shared.currentSelectionMode() {
-            cell.textLabel?.font = OldBranding.shared.selectedItemFont()
+            cell.textLabel?.font = Branding.shared.selectedItemFont
         } else {
-            cell.textLabel?.font = OldBranding.shared.unselectedItemFont()
+            cell.textLabel?.font = Branding.shared.unselectedItemFont
         }
 
         return cell

@@ -27,9 +27,9 @@
                                                              forIndexPath:indexPath];
     ProductUnit *unit = [[self resultsController] objectAtIndexPath:indexPath];
     if([[self.product unit] isEqual:unit]) {
-        cell.textLabel.font = [OldBranding.shared selectedItemFont];
+        cell.textLabel.font = Branding.shared.selectedItemFont;
     } else {
-        cell.textLabel.font = [OldBranding.shared unselectedItemFont];
+        cell.textLabel.font = Branding.shared.unselectedItemFont;
     }
     if(unit.name != nil && [[unit name] isEqualToString:@""] == false) {
         cell.textLabel.text = unit.name;
@@ -37,7 +37,7 @@
         cell.textLabel.text = NSLocalizedString(@"no_name", nil);
     }
 
-    cell.tintColor = [OldBranding.shared actionColor];
+    cell.tintColor = Branding.shared.actionColor;
     return cell;
 }
 
