@@ -34,14 +34,16 @@ extension UIColor {
 
 class Branding: NSObject {
 
-    @objc
-    static let shared = Branding()
+    @objc static let shared = Branding()
 
-    let defaultTextColor = UIColor.CustomColors.defaultText.color
+    // MARK: - Colors
+
+    @objc let defaultTextColor = UIColor.CustomColors.defaultText.color
     let defaultBackgroundColor = UIColor.CustomColors.defaultBackground.color
-    let highlightBackgroundColor = UIColor.CustomColors.highlightBackground.color
-    let highlightTextColor = UIColor.CustomColors.highlightText.color
-    let actionColor = UIColor.CustomColors.actionText.color
+    @objc let actionColor = UIColor.CustomColors.actionText.color
+
+    let strikeThroughColor = UIColor.CustomColors.actionText.color
+    let productBoughtTextColor = UIColor.gray
 
     let defaultTextFont = UIFont.preferredFont(forTextStyle: .body)
     let defaultDetailTextFont = UIFont.preferredFont(forTextStyle: .footnote)
@@ -54,52 +56,19 @@ class Branding: NSObject {
             NSAttributedString.Key.foregroundColor: defaultTextColor
         ]
     }
-}
 
-class OldBranding: NSObject {
-    @objc
-    static let shared = OldBranding()
-    
-    //MARK: - Colors
-    
-    private let redColor = UIColor(red: 204/255, green: 0/255, blue: 0/255, alpha: 1.0)
-    private let gray = UIColor.gray
-    
-    @objc
-    func actionColor() -> UIColor {
-        return Branding.shared.actionColor
-    }
-    
-    func productNotBoughtTextColor() -> UIColor {
-        return Branding.shared.defaultTextColor
-    }
-    
-    func productBoughtTextColor() -> UIColor {
-        return self.gray
-    }
-    
-    func strikeThroughColor() -> UIColor {
-        return self.redColor
-    }
-
-    @objc
-    func defaultTextColor() -> UIColor {
-        return Branding.shared.defaultTextColor;
-    }
-    
     // MARK: - Fonts
-    
+
     private let defaultBoldFont = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.bold)
     private let defaultRegularFont = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.regular)
     private let defaultLightFont = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.light)
-    
-    @objc
-    func selectedItemFont() -> UIFont {
+
+    @objc var selectedItemFont: UIFont {
         return defaultBoldFont
     }
-    
-    @objc
-    func unselectedItemFont() -> UIFont {
+
+    @objc var unselectedItemFont: UIFont {
         return defaultLightFont
     }
+
 }

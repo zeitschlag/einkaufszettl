@@ -66,7 +66,7 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         
         self.searchController?.searchBar.sizeToFit()
         self.searchController?.searchBar.delegate = self
-        self.searchController?.searchBar.tintColor = OldBranding.shared.actionColor()
+        self.searchController?.searchBar.tintColor = Branding.shared.actionColor
         self.searchController?.searchBar.searchBarStyle = UISearchBarStyle.minimal
         self.searchController?.searchBar.placeholder = NSLocalizedString("search thing placeholder", comment: "Placeholder for Searchbar in Things list")
         
@@ -220,12 +220,12 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         let product = resultsController.object(at: indexPath)
         
         if (product.onList?.boolValue ?? false) == true {
-            cell.textLabel?.font = OldBranding.shared.selectedItemFont()
+            cell.textLabel?.font = Branding.shared.selectedItemFont
         } else {
-            cell.textLabel?.font = OldBranding.shared.unselectedItemFont()
+            cell.textLabel?.font = Branding.shared.unselectedItemFont
         }
 
-        cell.tintColor = OldBranding.shared.actionColor()
+        cell.tintColor = Branding.shared.actionColor
         cell.textLabel?.text = product.name
         cell.textLabel?.textColor = Branding.shared.defaultTextColor
         cell.detailTextLabel?.text = product.detailText
@@ -348,7 +348,7 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
 //            }
         }
         
-        addToListAction.backgroundColor = OldBranding.shared.actionColor()
+        addToListAction.backgroundColor = Branding.shared.actionColor
         
         let swipeActionConfiguration = UISwipeActionsConfiguration(actions: [addToListAction])
         swipeActionConfiguration.performsFirstActionWithFullSwipe = true

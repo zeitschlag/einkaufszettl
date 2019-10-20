@@ -45,7 +45,7 @@
     [self.searchController setHidesNavigationBarDuringPresentation:NO];
     
     self.searchController.searchBar.delegate = self;
-    self.searchController.searchBar.tintColor = [OldBranding.shared actionColor];
+    self.searchController.searchBar.tintColor = Branding.shared.actionColor;
     [[self.searchController searchBar] setSearchBarStyle:UISearchBarStyleMinimal];
     [[self.searchController searchBar] setPlaceholder:NSLocalizedString(@"search unit placeholder", nil)];
     
@@ -138,7 +138,7 @@
         
     }];
     
-    selectAction.backgroundColor = [OldBranding.shared actionColor];
+    selectAction.backgroundColor = Branding.shared.actionColor;
     
     UISwipeActionsConfiguration *swipeActionConfiguration = [UISwipeActionsConfiguration configurationWithActions:@[selectAction]];
     

@@ -133,7 +133,7 @@
     } // else if (indexPath.section == 2) {
         EZLButtonTableViewCell *buttonCell = (EZLButtonTableViewCell *)[tableView dequeueReusableCellWithIdentifier:deleteCellIdentifier forIndexPath:indexPath];
 
-        buttonCell.button.tintColor = [OldBranding.shared actionColor];
+        buttonCell.button.tintColor = Branding.shared.actionColor;
         [buttonCell.button setTitle:NSLocalizedString(@"GENERAL.REMOVE", "Remove") forState:UIControlStateNormal];
         buttonCell.delegate = self;
         

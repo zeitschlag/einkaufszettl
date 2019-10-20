@@ -48,7 +48,7 @@
     [self.searchController setHidesNavigationBarDuringPresentation:NO];
     
     self.searchController.searchBar.delegate = self;
-    self.searchController.searchBar.tintColor = [OldBranding.shared actionColor];
+    self.searchController.searchBar.tintColor = [Branding.shared actionColor];
     [[self.searchController searchBar] setSearchBarStyle:UISearchBarStyleMinimal];
     [[self.searchController searchBar] setPlaceholder:NSLocalizedString(@"search category placeholder", nil)];
     
@@ -219,7 +219,7 @@
         completionHandler(YES);
     }];
     
-    selectAction.backgroundColor = [OldBranding.shared actionColor];
+    selectAction.backgroundColor = [Branding.shared actionColor];
     
     UISwipeActionsConfiguration *swipeActionConfiguration = [UISwipeActionsConfiguration configurationWithActions:@[selectAction]];
     
@@ -245,12 +245,12 @@
     ProductCategory *category = [[self resultsController] objectAtIndexPath:indexPath];
 
     if([self.product.category isEqual:category]) {
-        cell.textLabel.font = [OldBranding.shared selectedItemFont];
+        cell.textLabel.font = Branding.shared.selectedItemFont;
     } else {
-        cell.textLabel.font = [OldBranding.shared unselectedItemFont];
+        cell.textLabel.font = Branding.shared.unselectedItemFont;
     }
 
-    cell.textLabel.textColor = [OldBranding.shared defaultTextColor];
+    cell.textLabel.textColor = Branding.shared.defaultTextColor;
 
     if([[category name] isEqualToString:@""] == NO) {
         cell.textLabel.text = category.name;
@@ -258,7 +258,7 @@
         [[cell textLabel] setText:NSLocalizedString(@"no_name", nil)];
     }
 
-    cell.tintColor = [OldBranding.shared actionColor];
+    cell.tintColor = Branding.shared.actionColor;
     
     return cell;
 }

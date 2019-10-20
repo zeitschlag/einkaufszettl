@@ -14,7 +14,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
     var managedObjectContext = CoreDataStack.shared.persistentContainer.viewContext
     var resultsController: NSFetchedResultsController<Product>?
     
-    let branding = OldBranding.shared
+    let branding = Branding.shared
 
     @IBOutlet weak var trashBinButton: UIBarButtonItem!
     @IBOutlet weak var settingsButton: UIBarButtonItem!
@@ -174,7 +174,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
             completionHandler(true)
         }
         
-        toggleBoughtAction.backgroundColor = OldBranding.shared.actionColor()
+        toggleBoughtAction.backgroundColor = Branding.shared.actionColor
         
         let swipeActionConfiguration = UISwipeActionsConfiguration(actions: [toggleBoughtAction])
         swipeActionConfiguration.performsFirstActionWithFullSwipe = true
@@ -202,7 +202,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
 
         }
         
-        removeFromListAction.backgroundColor = OldBranding.shared.actionColor()
+        removeFromListAction.backgroundColor = Branding.shared.actionColor
         
         let swipeActionConfiguration = UISwipeActionsConfiguration(actions: [removeFromListAction])
         swipeActionConfiguration.performsFirstActionWithFullSwipe = true
@@ -246,20 +246,20 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         if productBought == true {
             textLabelText = NSAttributedString(string: productName, attributes: [
                 NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue,
-                NSAttributedStringKey.strikethroughColor: branding.strikeThroughColor(),
-                NSAttributedStringKey.foregroundColor: branding.productBoughtTextColor(),
+                NSAttributedStringKey.strikethroughColor: branding.strikeThroughColor,
+                NSAttributedStringKey.foregroundColor: branding.productBoughtTextColor,
                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.light)
                 ])
         } else {
             textLabelText = NSAttributedString(string: productName, attributes: [
-                NSAttributedStringKey.foregroundColor: branding.productNotBoughtTextColor(),
+                NSAttributedStringKey.foregroundColor: branding.defaultTextColor,
                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.regular)
                 ])
         }
         
         cell.textLabel?.attributedText = textLabelText
         cell.detailTextLabel?.text = product.detailText
-        cell.tintColor = branding.actionColor()
+        cell.tintColor = branding.actionColor
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
