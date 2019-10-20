@@ -81,6 +81,7 @@ class EZLCategoryVisbilityTableViewController: UITableViewController {
             }
             
             cell.switchElement.isOn = switchElementOn
+            cell.switchElement.onTintColor = Branding.shared.actionColor
             
             cell.category = category
             cell.label.text = category.name!
