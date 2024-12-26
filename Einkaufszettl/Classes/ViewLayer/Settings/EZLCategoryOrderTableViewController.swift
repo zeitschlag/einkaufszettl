@@ -49,7 +49,7 @@ class EZLCategoryOrderTableViewController: UITableViewController {
     
     // MARK: - Navigation
     
-    override func willMove(toParentViewController parent: UIViewController?) {
+    override func willMove(toParent parent: UIViewController?) {
         if parent == nil && self.categoryOrderSaved == false {
             self.managedObjectContext.rollback()
             self.managedObjectContext.undoManager = nil
@@ -130,8 +130,8 @@ class EZLCategoryOrderTableViewController: UITableViewController {
         return true
     }
     
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
-        return UITableViewCellEditingStyle.none
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
     }
 
     override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
@@ -143,22 +143,22 @@ class EZLCategoryOrderTableViewController: UITableViewController {
     @IBAction func saveButtonTapped(_ sender: AnyObject) {
 
         do {
-                try self.managedObjectContext.save()
-                self.categoryOrderSaved = true
-                NotificationCenter.default.post(name: Notification.Name(rawValue: kOrderOfCategoriesChangedNotificationName), object: nil)
+            try self.managedObjectContext.save()
+            self.categoryOrderSaved = true
+            NotificationCenter.default.post(name: Notification.Name(rawValue: kOrderOfCategoriesChangedNotificationName), object: nil)
+            self.navigationController?.popViewController(animated: true)
+        } catch let error {
+            let errorMessage = "Sorry, the App couldn't save the changed Category order. Please reach out to the developer and tell him about this. (Reason \(error.localizedDescription))"
+
+            let errorAlert: UIAlertController = UIAlertController(title: "Unexpected Error occured", message: errorMessage, preferredStyle: .alert)
+            let okAction: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
                 self.navigationController?.popViewController(animated: true)
-            } catch let error {
-                let errorMessage = "Sorry, the App couldn't save the changed Category order. Please reach out to the developer and tell him about this. (Reason \(error.localizedDescription))"
-                
-                let errorAlert: UIAlertController = UIAlertController(title: "Unexpected Error occured", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
-                let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { _ in
-                    self.navigationController?.popViewController(animated: true)
-                })
-                
-                errorAlert.addAction(okAction)
-                
-                self.present(errorAlert, animated: true, completion: nil)
-            
+            })
+
+            errorAlert.addAction(okAction)
+
+            self.present(errorAlert, animated: true, completion: nil)
+
         }
     }
     
@@ -167,7 +167,7 @@ class EZLCategoryOrderTableViewController: UITableViewController {
     }
 }
 
-extension EZLCategoryOrderTableViewController: NSFetchedResultsControllerDelegate {
+extension EZLCategoryOrderTableViewController: @preconcurrency NSFetchedResultsControllerDelegate {
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.beginUpdates()
     }

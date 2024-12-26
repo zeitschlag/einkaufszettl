@@ -10,8 +10,7 @@ import UIKit
 
 class CoreDataStack: NSObject {
     
-    @objc
-    static let shared = CoreDataStack()
+    @objc nonisolated(unsafe) static let shared = CoreDataStack()
     
     @objc
     lazy var persistentContainer: NSPersistentContainer = {

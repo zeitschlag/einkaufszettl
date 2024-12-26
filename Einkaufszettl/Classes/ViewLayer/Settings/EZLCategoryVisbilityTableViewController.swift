@@ -41,7 +41,7 @@ class EZLCategoryVisbilityTableViewController: UITableViewController {
 
     // MARK: - Navigation
     
-    override func willMove(toParentViewController parent: UIViewController?) {
+    override func willMove(toParent parent: UIViewController?) {
         if parent == nil && self.categoryVisibiltySaved == false {
             self.managedObjectContext.rollback()
             self.managedObjectContext.undoManager = nil
@@ -109,8 +109,8 @@ class EZLCategoryVisbilityTableViewController: UITableViewController {
             } catch let error {
                 let errorMessage = "Sorry, the App couldn't save the changed Category order. Please reach out to the developer and tell him about this. (Reason \(error.localizedDescription))"
                 
-                let errorAlert: UIAlertController = UIAlertController(title: "An unexpected Error occured", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
-                let okAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { _ in
+                let errorAlert: UIAlertController = UIAlertController(title: "An unexpected Error occured", message: errorMessage, preferredStyle: .alert)
+                let okAction: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
                     self.navigationController?.popViewController(animated: true)
                 })
                 
@@ -121,13 +121,13 @@ class EZLCategoryVisbilityTableViewController: UITableViewController {
         
     }
     
-    fileprivate func updateSaveButton() {
+    func updateSaveButton() {
         self.saveButton.isEnabled = self.managedObjectContext.hasChanges
     }
 }
 
-extension EZLCategoryVisbilityTableViewController: SwitchTableViewCellDelegate {
+extension EZLCategoryVisbilityTableViewController: @preconcurrency SwitchTableViewCellDelegate {
     func didSwitchValue(of cell: SwitchTableViewCell) {
-        self.updateSaveButton()
+        updateSaveButton()
     }
 }

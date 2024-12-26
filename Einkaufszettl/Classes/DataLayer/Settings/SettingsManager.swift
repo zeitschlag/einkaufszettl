@@ -29,7 +29,7 @@ enum SelectionMode: Int {
 class SettingsManager: NSObject {
     
     @objc
-    static let shared = SettingsManager()
+    nonisolated(unsafe) static let shared = SettingsManager()
     
     //MARK: - Selection
     

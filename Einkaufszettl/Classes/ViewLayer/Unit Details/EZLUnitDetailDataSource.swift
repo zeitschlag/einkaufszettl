@@ -95,7 +95,7 @@ extension EZLUnitDetailDataSource: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: deleteUnitCellIdentifier, for: indexPath) as! EZLButtonTableViewCell
             cell.delegate = buttonCellDelegate
             cell.button.tintColor = Branding.shared.actionColor
-            cell.button.setTitle(NSLocalizedString("GENERAL.REMOVE", comment: "Remove"), for: UIControlState.normal)
+            cell.button.setTitle(NSLocalizedString("GENERAL.REMOVE", comment: "Remove"), for: .normal)
 
             return cell
         }

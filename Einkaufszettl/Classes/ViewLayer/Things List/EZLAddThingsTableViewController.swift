@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {
+class EZLAddThingsTableViewController: UITableViewController, @preconcurrency NSFetchedResultsControllerDelegate, UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {
     var managedObjectContext: NSManagedObjectContext = CoreDataStack.shared.persistentContainer.viewContext
     var resultsController: NSFetchedResultsController<Product>?
     var searchController: EZLSearchController?
@@ -60,14 +60,14 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         self.searchController = EZLSearchController(searchResultsController: nil)
         self.searchController?.searchResultsUpdater = self
         self.searchController?.delegate = self
-        self.searchController?.dimsBackgroundDuringPresentation = false
+        self.searchController?.obscuresBackgroundDuringPresentation = false
         self.searchController?.definesPresentationContext = true
         self.searchController?.hidesNavigationBarDuringPresentation = false
         
         self.searchController?.searchBar.sizeToFit()
         self.searchController?.searchBar.delegate = self
         self.searchController?.searchBar.tintColor = Branding.shared.actionColor
-        self.searchController?.searchBar.searchBarStyle = UISearchBarStyle.minimal
+        self.searchController?.searchBar.searchBarStyle = .minimal
         self.searchController?.searchBar.placeholder = NSLocalizedString("search thing placeholder", comment: "Placeholder for Searchbar in Things list")
         
         self.navigationItem.searchController = self.searchController
@@ -239,7 +239,7 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         if onList == false && self.addedProducts.contains(product) == false {
             self.addedProducts.append(product)
         } else {
-            if let index = self.addedProducts.index(of: product) {
+            if let index = self.addedProducts.firstIndex(of: product) {
                 self.addedProducts.remove(at: index)
             }
         }
@@ -371,15 +371,17 @@ class EZLAddThingsTableViewController: UITableViewController, NSFetchedResultsCo
         
         switch type {
         case NSFetchedResultsChangeType.delete:
-            guard let indexPath = indexPath else { return }
-            self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+            guard let indexPath else { return }
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
         case NSFetchedResultsChangeType.update:
-            guard let indexPath = indexPath else { return }
-            self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+            guard let indexPath else { return }
+            self.tableView.reloadRows(at: [indexPath], with: .none)
         case NSFetchedResultsChangeType.insert:
-            guard let newIndexPath = newIndexPath else { return }
-            self.tableView.insertRows(at: [newIndexPath], with: UITableViewRowAnimation.fade)
+            guard let newIndexPath else { return }
+            self.tableView.insertRows(at: [newIndexPath], with: .fade)
         case NSFetchedResultsChangeType.move:
+            break
+        @unknown default:
             break
         }
     }

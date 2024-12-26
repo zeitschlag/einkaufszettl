@@ -88,7 +88,7 @@
             }
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                [UIApplication sharedApplication].applicationIconBadgeNumber = amount;
+                [UNUserNotificationCenter.currentNotificationCenter setBadgeCount:amount withCompletionHandler:nil];
             }];
             
         }

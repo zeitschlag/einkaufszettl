@@ -40,7 +40,7 @@
     self.searchController = [[EZLSearchController alloc] initWithSearchResultsController:nil]; //self.searchResultsTableController];
     [self.searchController setSearchResultsUpdater:self];
     [self.searchController setDelegate:self];
-    [self.searchController setDimsBackgroundDuringPresentation:NO];
+    self.searchController.obscuresBackgroundDuringPresentation = NO;
     [self.searchController setDefinesPresentationContext:YES];
     [self.searchController setHidesNavigationBarDuringPresentation:NO];
     

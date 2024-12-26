@@ -58,7 +58,7 @@ extension EZLCategoryDetailDataSource: UITableViewDataSource {
                 
                 cell.delegate = self.buttonCellDelegate
                 cell.button.tintColor = Branding.shared.actionColor
-                cell.button.setTitle(NSLocalizedString("GENERAL.REMOVE", comment: "Remove"), for: UIControlState.normal)
+                cell.button.setTitle(NSLocalizedString("GENERAL.REMOVE", comment: "Remove"), for: .normal)
                 
                 return cell
             }

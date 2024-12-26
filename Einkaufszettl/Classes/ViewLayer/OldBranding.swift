@@ -34,7 +34,7 @@ extension UIColor {
 
 class Branding: NSObject {
 
-    @objc static let shared = Branding()
+    @MainActor @objc static let shared = Branding()
 
     // MARK: - Colors
 
@@ -48,8 +48,7 @@ class Branding: NSObject {
     let defaultTextFont = UIFont.preferredFont(forTextStyle: .body)
     let defaultDetailTextFont = UIFont.preferredFont(forTextStyle: .footnote)
 
-    @objc
-    func setupBranding() {
+    @MainActor @objc func setupBranding() {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = actionColor
         navigationBarAppearance.titleTextAttributes = [

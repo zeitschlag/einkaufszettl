@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class EZLShoppingListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+class EZLShoppingListTableViewController: UITableViewController, @preconcurrency NSFetchedResultsControllerDelegate {
     
     var managedObjectContext = CoreDataStack.shared.persistentContainer.viewContext
     var resultsController: NSFetchedResultsController<Product>?
@@ -245,18 +245,18 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
         
         if productBought == true {
             textLabelText = NSAttributedString(string: productName, attributes: [
-                NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue,
-                NSAttributedStringKey.strikethroughColor: branding.strikeThroughColor,
-                NSAttributedStringKey.foregroundColor: branding.productBoughtTextColor,
-                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.light)
-                ])
+                .strikethroughStyle: NSUnderlineStyle.single.rawValue,
+                .strikethroughColor: branding.strikeThroughColor,
+                .foregroundColor: branding.productBoughtTextColor,
+                .font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.light)
+            ])
         } else {
             textLabelText = NSAttributedString(string: productName, attributes: [
-                NSAttributedStringKey.foregroundColor: branding.defaultTextColor,
-                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.regular)
-                ])
+                .foregroundColor: branding.defaultTextColor,
+                .font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.regular)
+            ])
         }
-        
+
         cell.textLabel?.attributedText = textLabelText
         cell.detailTextLabel?.text = product.detailText
         cell.tintColor = branding.actionColor
@@ -468,7 +468,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
-        guard let resultsController = self.resultsController else { return }
+        guard let resultsController else { return }
         
         if resultsController == controller {
             self.tableView.beginUpdates()
@@ -477,7 +477,7 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         
-        guard let resultsController = self.resultsController else { return }
+        guard let resultsController else { return }
         
         if resultsController == controller {
             self.tableView.endUpdates()
@@ -486,29 +486,31 @@ class EZLShoppingListTableViewController: UITableViewController, NSFetchedResult
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         
-        guard let resultsController = self.resultsController else { return }
+        guard let resultsController else { return }
         
-        let fadeAnimation = UITableViewRowAnimation.fade
+        let fadeAnimation = UITableView.RowAnimation.fade
         
         if controller == resultsController {
             switch type {
             case .delete:
-                if let indexPath = indexPath {
+                if let indexPath {
                     self.tableView.deleteRows(at: [indexPath], with: fadeAnimation)
                 }
             case .update:
-                if let indexPath = indexPath {
+                if let indexPath {
                     self.tableView.reloadRows(at: [indexPath], with: fadeAnimation)
                 }
             case .insert:
-                if let newIndexPath = newIndexPath {
+                if let newIndexPath {
                     self.tableView.insertRows(at: [newIndexPath], with: fadeAnimation)
                 }
             case .move:
-                if let indexPath = indexPath, let newIndexPath = newIndexPath {
+                if let indexPath, let newIndexPath {
                     self.tableView.deleteRows(at: [indexPath], with: fadeAnimation)
                     self.tableView.insertRows(at: [newIndexPath], with: fadeAnimation)
                 }
+            @unknown default:
+                break
             }
         }
         

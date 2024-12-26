@@ -8,15 +8,15 @@
 
 import UIKit
 
-extension EZLCategoryDetailTableViewController: EZLButtonTableViewCellDelegate {
+extension EZLCategoryDetailTableViewController: @preconcurrency EZLButtonTableViewCellDelegate {
     func buttonTapped(sender: Any) {
         
         let title = String(format: NSLocalizedString("REMOVE.%@.IRREVOCABLY", comment: ""), self.category.name ?? "")
         
-        let alertController = UIAlertController(title: title, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
         
-        let cancelAction = UIAlertAction(title: NSLocalizedString("GENERAL.NO", comment:"No"), style: UIAlertActionStyle.cancel, handler: nil)
-        let deleteAction = UIAlertAction(title: NSLocalizedString("GENERAL.YES", comment:"Yes"), style: UIAlertActionStyle.destructive) { (_) in
+        let cancelAction = UIAlertAction(title: NSLocalizedString("GENERAL.NO", comment:"No"), style: .cancel, handler: nil)
+        let deleteAction = UIAlertAction(title: NSLocalizedString("GENERAL.YES", comment:"Yes"), style: .destructive) { (_) in
             
             self.managedObjectContext.delete(self.category)
             

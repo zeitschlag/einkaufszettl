@@ -70,15 +70,15 @@ class EZLUnitDetailTableViewController: UITableViewController {
     }
 }
 
-extension EZLUnitDetailTableViewController: EZLButtonTableViewCellDelegate {
+extension EZLUnitDetailTableViewController: @preconcurrency EZLButtonTableViewCellDelegate {
     func buttonTapped(sender: Any) {
         
         let title = String(format: NSLocalizedString("REMOVE.%@.IRREVOCABLY", comment: ""), self.unit?.name ?? "")
         
-        let alertController = UIAlertController(title: title, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
         
-        let cancelAction = UIAlertAction(title: NSLocalizedString("GENERAL.NO", comment:"No"), style: UIAlertActionStyle.cancel, handler: nil)
-        let deleteAction = UIAlertAction(title: NSLocalizedString("GENERAL.YES", comment:"Yes"), style: UIAlertActionStyle.destructive) { (_) in
+        let cancelAction = UIAlertAction(title: NSLocalizedString("GENERAL.NO", comment:"No"), style: .cancel, handler: nil)
+        let deleteAction = UIAlertAction(title: NSLocalizedString("GENERAL.YES", comment:"Yes"), style: .destructive) { (_) in
             
             defer {
                 self.navigationController?.popToRootViewController(animated: true)
